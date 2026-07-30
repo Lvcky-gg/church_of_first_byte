@@ -13,7 +13,12 @@
       "Bash(node -e ' *)",
       "Bash(node interact.mjs)",
       "Bash(sed -i \"s/await page.fill\\('#byteble-search', 'golden calf'\\)/await page.fill\\('#byteble-search', 'calf'\\)/\" interact.mjs)",
-      "Bash(pkill -f \"vite --port 5177\")"
+      "Bash(pkill -f \"vite --port 5177\")",
+      "Bash(git -C The-Byteble remote -v)",
+      "Bash(git clone *)",
+      "Bash(echo \"exit code: $?\")",
+      "Bash(git rm *)",
+      "Bash(git submodule *)"
     ],
     "additionalDirectories": [
       "/home/lvcky/church/The-Byteble"
