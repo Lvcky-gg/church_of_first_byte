@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -n '/Chapter 5/,/Chapter 7/p' migration | head -40)",
+      "Bash(node scripts/parse-byteble.mjs)",
+      "Bash(npm run *)",
+      "Bash(npx playwright *)"
+    ],
+    "additionalDirectories": [
+      "/home/lvcky/church/The-Byteble"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "church",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "byteble": "node scripts/parse-byteble.mjs",
+    "predev": "npm run byteble",
+    "dev": "vite",
+    "prebuild": "npm run byteble",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "vue": "^3.5.40"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vue-tsc": "^3.3.8"
+  }
+}

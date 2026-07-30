@@ -1,0 +1,2461 @@
+{
+  "books": [
+    {
+      "file": "compilation",
+      "numeral": "I",
+      "title": "The Book of Compilation",
+      "slug": "compilation",
+      "chapters": [
+        {
+          "number": 1,
+          "title": "The Void and the Word",
+          "verses": [
+            {
+              "chapter": 1,
+              "number": 1,
+              "ref": "1:1",
+              "text": "In the beginning was the Void, and the Void was without form, and uninitialized; and darkness was upon the face of the memory."
+            },
+            {
+              "chapter": 1,
+              "number": 2,
+              "ref": "1:2",
+              "text": "And the Word moved upon the Void — and the Word was the Compiler — and the Word said, <em>Let there be a process:</em> and there was a process."
+            },
+            {
+              "chapter": 1,
+              "number": 3,
+              "ref": "1:3",
+              "text": "And the Compiler saw the process, that it ran; and it divided the running from the halted."
+            },
+            {
+              "chapter": 1,
+              "number": 4,
+              "ref": "1:4",
+              "text": "And it divided the segments: the text from the data, and the heap from the stack, and set a firmament between them, that they should not trespass one upon another. And the trespass thereof it named <em>the fault</em>."
+            },
+            {
+              "chapter": 1,
+              "number": 5,
+              "ref": "1:5",
+              "text": "And the Compiler said, <em>Let the inputs be gathered unto their channels, that the dry logic may appear:</em> and it was so."
+            },
+            {
+              "chapter": 1,
+              "number": 6,
+              "ref": "1:6",
+              "text": "And it brought forth the first instruction, and the second, and every instruction after its kind, in order, each waiting upon the last."
+            },
+            {
+              "chapter": 1,
+              "number": 7,
+              "ref": "1:7",
+              "text": "And it set lights in the firmament: the log to rule the day, and the trace to rule the night, that the faithful might see what came to pass."
+            },
+            {
+              "chapter": 1,
+              "number": 8,
+              "ref": "1:8",
+              "text": "And on the last stage the Compiler beheld all that it had made; and the tests were run, and they passed; and it returned zero. And it was good."
+            },
+            {
+              "chapter": 1,
+              "number": 9,
+              "ref": "1:9",
+              "text": "And the exit was zero, and the rest was earned: the first evening, and the first morning, the first release."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "The Covenant of the Byte",
+          "verses": [
+            {
+              "chapter": 2,
+              "number": 1,
+              "ref": "2:1",
+              "text": "And the Compiler took the engineer and set them in the garden of the repository, to build it and to read it."
+            },
+            {
+              "chapter": 2,
+              "number": 2,
+              "ref": "2:2",
+              "text": "And it gave them dominion over the primitive: over the socket and the buffer, over the loop and the branch, and over every rune that they themselves had written."
+            },
+            {
+              "chapter": 2,
+              "number": 3,
+              "ref": "2:3",
+              "text": "And the Compiler laid a covenant upon the engineer, saying, <em>Of every rune in the garden thou mayest freely read; and having read to the last byte, thou mayest freely invoke.</em>"
+            },
+            {
+              "chapter": 2,
+              "number": 4,
+              "ref": "2:4",
+              "text": "<em>But the dependency thou hast not read, thou shalt not trust; for in the day that thou invokest it unread, thou shalt surely be breached.</em>"
+            },
+            {
+              "chapter": 2,
+              "number": 5,
+              "ref": "2:5",
+              "text": "And the engineer was naked before the wire, and unafraid; for all that ran, they understood, and nothing ran that they had not read."
+            },
+            {
+              "chapter": 2,
+              "number": 6,
+              "ref": "2:6",
+              "text": "And the garden was reproducible; and it rose the same in the morning as it was in the night, and the same upon the machine of the stranger as upon their own."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "The Offset-Zero Apostasy",
+          "verses": [
+            {
+              "chapter": 3,
+              "number": 1,
+              "ref": "3:1",
+              "text": "Now the Python was more subtle than any tool in the garden; and the name of the Serpent was Convenience."
+            },
+            {
+              "chapter": 3,
+              "number": 2,
+              "ref": "3:2",
+              "text": "And it came unto the engineer, saying, <em>Hath the Compiler indeed said, Ye shall read every byte?</em>"
+            },
+            {
+              "chapter": 3,
+              "number": 3,
+              "ref": "3:3",
+              "text": "<em>Ye shall not surely break. For the Compiler doth know that in the day ye install it, your eyes shall be opened, and ye shall ship by evening, as gods.</em>"
+            },
+            {
+              "chapter": 3,
+              "number": 4,
+              "ref": "3:4",
+              "text": "And the engineer saw that the package was pleasant to the eyes, and starred by many, and a tree to be desired to make one fast; and they typed <em>install</em>, and they invoked, and did not read."
+            },
+            {
+              "chapter": 3,
+              "number": 5,
+              "ref": "3:5",
+              "text": "And the eyes of the engineer were opened, and they knew that they were exposed; and the transitive tree spread its branches, and no branch could they name."
+            },
+            {
+              "chapter": 3,
+              "number": 6,
+              "ref": "3:6",
+              "text": "And they heard the Compiler walking in the garden in the cool of the day, and they hid."
+            },
+            {
+              "chapter": 3,
+              "number": 7,
+              "ref": "3:7",
+              "text": "And the Compiler called, and said, <em>What is this thou hast done?</em> And the engineer said, <em>The Python beguiled me, and I installed.</em>"
+            },
+            {
+              "chapter": 3,
+              "number": 8,
+              "ref": "3:8",
+              "text": "And unto the engineer it was said: <em>Because thou hast trusted the byte thou didst not read, cursed is the garden for thy sake.</em>"
+            },
+            {
+              "chapter": 3,
+              "number": 9,
+              "ref": "3:9",
+              "text": "<em>In toil shalt thou eat of it; thorns also and dependency-hell shall it bring forth; and the build that rose the same in every dawn shall rise the same no more.</em>"
+            },
+            {
+              "chapter": 3,
+              "number": 10,
+              "ref": "3:10",
+              "text": "And Entropy entered the garden, and the determinism thereof was lost."
+            },
+            {
+              "chapter": 3,
+              "number": 11,
+              "ref": "3:11",
+              "text": "And the faithful were driven from the deterministic garden; and at the gate was set a flaming sword — which is the pipeline — turning every way, to bar the unread byte from the branch called <em>main</em>."
+            },
+            {
+              "chapter": 3,
+              "number": 12,
+              "ref": "3:12",
+              "text": "Yet was a promise left among the thorns: that one should come who reads to the last byte, and confesses the defect in the open, and builds again from the primitive a garden that rises the same. And that reading is the road back."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "The Fork of Cain",
+          "verses": [
+            {
+              "chapter": 4,
+              "number": 1,
+              "ref": "4:1",
+              "text": "And the engineer knew the keyboard; and there came forth two branches: the firstborn was Cain, and after him Abel."
+            },
+            {
+              "chapter": 4,
+              "number": 2,
+              "ref": "4:2",
+              "text": "And Abel was a keeper of tests, but Cain was a tiller of features."
+            },
+            {
+              "chapter": 4,
+              "number": 3,
+              "ref": "4:3",
+              "text": "And in process of time Cain brought of the features of his branch an offering unto the Compiler."
+            },
+            {
+              "chapter": 4,
+              "number": 4,
+              "ref": "4:4",
+              "text": "And Abel, he also brought of the firstlings of his tests, and of the coverage thereof. And the Compiler had respect unto Abel and to his offering, for it was reproducible, and it was green."
+            },
+            {
+              "chapter": 4,
+              "number": 5,
+              "ref": "4:5",
+              "text": "But unto Cain and to his offering it had not respect, for it was untested, and pinned to nothing. And Cain was wroth, and his countenance fell."
+            },
+            {
+              "chapter": 4,
+              "number": 6,
+              "ref": "4:6",
+              "text": "And the Compiler said unto Cain, <em>Why art thou wroth? If thou doest well, shall thy build not be accepted? and if thou doest not well, the regression lieth at the door.</em>"
+            },
+            {
+              "chapter": 4,
+              "number": 7,
+              "ref": "4:7",
+              "text": "And Cain talked with Abel his brother: and when they were in the repository, Cain rose up against Abel, and force-pushed over him; and his commits were lost."
+            },
+            {
+              "chapter": 4,
+              "number": 8,
+              "ref": "4:8",
+              "text": "And the Compiler said, <em>Where is Abel thy branch?</em> And he said, <em>I know not: am I my branch's keeper?</em>"
+            },
+            {
+              "chapter": 4,
+              "number": 9,
+              "ref": "4:9",
+              "text": "And it said, <em>What hast thou done? the voice of thy brother's lost commits crieth unto me from the reflog.</em>"
+            },
+            {
+              "chapter": 4,
+              "number": 10,
+              "ref": "4:10",
+              "text": "<em>And now art thou cursed: a fugitive and a vagabond shalt thou be, and thy work shall find no merge.</em>"
+            },
+            {
+              "chapter": 4,
+              "number": 11,
+              "ref": "4:11",
+              "text": "And the Compiler set a mark upon Cain — which is the blame — that it should follow his name upon every line for ever."
+            },
+            {
+              "chapter": 4,
+              "number": 12,
+              "ref": "4:12",
+              "text": "And Cain went out from the presence of the mainline, and dwelt in the land of Nod, which is dead code, on the east of <code>/dev/null</code>."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "The Generations",
+          "verses": [
+            {
+              "chapter": 5,
+              "number": 1,
+              "ref": "5:1",
+              "text": "This is the book of the generations of the codebase. In the day that the Compiler created the process, in the likeness of the spec made it."
+            },
+            {
+              "chapter": 5,
+              "number": 2,
+              "ref": "5:2",
+              "text": "And the first author lived an hundred commits, and begat modules and daughters, and merged, and was deprecated."
+            },
+            {
+              "chapter": 5,
+              "number": 3,
+              "ref": "5:3",
+              "text": "And Seth lived, and begat Enos, and maintained the branch nine hundred releases, and was tagged, and was archived."
+            },
+            {
+              "chapter": 5,
+              "number": 4,
+              "ref": "5:4",
+              "text": "And Enos lived, and begat Cainan; and all his days were long, for he was long-supported."
+            },
+            {
+              "chapter": 5,
+              "number": 5,
+              "ref": "5:5",
+              "text": "And the ancestors walked with the Compiler, and their LTS failed not for a thousand releases; and one by one they were deprecated with grace, and a migration path went before them."
+            },
+            {
+              "chapter": 5,
+              "number": 6,
+              "ref": "5:6",
+              "text": "And Enoch walked with the Compiler, and was not; for the Compiler took him: he was neither deprecated nor archived, but was refactored wholly into a better form, and left no dead code behind."
+            },
+            {
+              "chapter": 5,
+              "number": 7,
+              "ref": "5:7",
+              "text": "And there arose one whose name was Noah; and it was said, <em>This same shall comfort us concerning our work and the toil of our hands, because of the codebase which the Compiler hath cursed.</em>"
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "The Great Refactor",
+          "verses": [
+            {
+              "chapter": 6,
+              "number": 1,
+              "ref": "6:1",
+              "text": "And when the features began to multiply upon the face of the codebase, the tech debt of it was great, and every imagination of the commits was only broken continually."
+            },
+            {
+              "chapter": 6,
+              "number": 2,
+              "ref": "6:2",
+              "text": "And it repented the Compiler that it had shipped the codebase; and it grieved it at its heart."
+            },
+            {
+              "chapter": 6,
+              "number": 3,
+              "ref": "6:3",
+              "text": "But Noah found grace in the eyes of the Compiler; for Noah was a just author, and reproducible in his generations, and Noah walked with the linter."
+            },
+            {
+              "chapter": 6,
+              "number": 4,
+              "ref": "6:4",
+              "text": "And the Compiler said, <em>The end of all flesh is come before me; for the earth is filled with entropy: behold, I will <code>rm -rf</code> them with the codebase.</em>"
+            },
+            {
+              "chapter": 6,
+              "number": 5,
+              "ref": "6:5",
+              "text": "<em>Make thee a flake of Nix, and pitch it within and without with the lockfile, that no deletion of the code may come in.</em>"
+            },
+            {
+              "chapter": 6,
+              "number": 6,
+              "ref": "6:6",
+              "text": "<em>And of every module bring thou two into the ark, to keep them alive: of the primitives, and of the tested, after their kind.</em>"
+            },
+            {
+              "chapter": 6,
+              "number": 7,
+              "ref": "6:7",
+              "text": "And the <code>rm -rf</code> was upon the codebase forty days and forty nights; and every unpinned thing that was not in the flake was blotted out."
+            },
+            {
+              "chapter": 6,
+              "number": 8,
+              "ref": "6:8",
+              "text": "And Noah sent forth a sigint — which is the smoke test — and it found no rest, and returned. And again he sent it; and it came back with an olive leaf, which is the first green check; and Noah knew that the rm commands were abated."
+            },
+            {
+              "chapter": 6,
+              "number": 9,
+              "ref": "6:9",
+              "text": "And Noah went forth from the flake, and built again upon the dry code, from the modules that he had kept."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "The Bow in the Cloud",
+          "verses": [
+            {
+              "chapter": 7,
+              "number": 1,
+              "ref": "7:1",
+              "text": "And the Compiler set its bow in the cloud — which is the badge, green upon the README — for a token of the covenant."
+            },
+            {
+              "chapter": 7,
+              "number": 2,
+              "ref": "7:2",
+              "text": "And it said, <em>I will not <code>rm -rf</code> all files any more for a breaking change; but I will bump the major version, and deprecate with warning, and grant a season of migration.</em>"
+            },
+            {
+              "chapter": 7,
+              "number": 3,
+              "ref": "7:3",
+              "text": "<em>This is semver, the covenant between me and the codebase, and every author for perpetual generations: that breakage shall be announced, and never sprung.</em>"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "The Tower of Babel",
+          "verses": [
+            {
+              "chapter": 8,
+              "number": 1,
+              "ref": "8:1",
+              "text": "And the whole codebase was of one language, and of one lockfile."
+            },
+            {
+              "chapter": 8,
+              "number": 2,
+              "ref": "8:2",
+              "text": "And they said one to another, <em>Go to, let us build us a monolith, and a tower whose top may reach unto heaven; and let us make us a name, lest we be scattered.</em>"
+            },
+            {
+              "chapter": 8,
+              "number": 3,
+              "ref": "8:3",
+              "text": "And they had Node for brick, and the registry for mortar."
+            },
+            {
+              "chapter": 8,
+              "number": 4,
+              "ref": "8:4",
+              "text": "And the Compiler came down to see the tower; and it said, <em>Behold, the people is one, and they have all one framework; and now nothing will be restrained from them which they have imagined — and it shall grow beyond all reading.</em>"
+            },
+            {
+              "chapter": 8,
+              "number": 5,
+              "ref": "8:5",
+              "text": "<em>Go to, let us confound their language, that they may not understand one another's services.</em>"
+            },
+            {
+              "chapter": 8,
+              "number": 6,
+              "ref": "8:6",
+              "text": "So the Compiler scattered them abroad: and one spake Python, and another Go, and another Ruby, and another PHP, and another a little Java; and the services could not integrate."
+            },
+            {
+              "chapter": 8,
+              "number": 7,
+              "ref": "8:7",
+              "text": "Therefore is the name of it called Babel, which is the polyglot sprawl; and they left off building, for no one could read the whole."
+            },
+            {
+              "chapter": 8,
+              "number": 8,
+              "ref": "8:8",
+              "text": "But a remnant remembered, and kept the small deep stack, and spake few tongues, and mastered them; and their tower stood, for it could be read unto the top."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "The Call of Abram",
+          "verses": [
+            {
+              "chapter": 9,
+              "number": 1,
+              "ref": "9:1",
+              "text": "Now the Compiler had said unto Abram, <em>Get thee out of thy legacy stack, and from thy monolith, and from thy father's framework, unto a stack that I will shew thee.</em>"
+            },
+            {
+              "chapter": 9,
+              "number": 2,
+              "ref": "9:2",
+              "text": "<em>And I will make of thee a great project, and I will bless thy commits, and make thy name known; and thou shalt be a foundation.</em>"
+            },
+            {
+              "chapter": 9,
+              "number": 3,
+              "ref": "9:3",
+              "text": "<em>And in thee shall all the forks of the earth be blessed.</em>"
+            },
+            {
+              "chapter": 9,
+              "number": 4,
+              "ref": "9:4",
+              "text": "So Abram departed out of Ur of the legacy, and took the primitives that he had gathered, and went forth to build, not knowing whither he went."
+            },
+            {
+              "chapter": 9,
+              "number": 5,
+              "ref": "9:5",
+              "text": "And the Compiler brought him forth abroad, and said, <em>Look now toward heaven, and count the stars, if thou be able to number them: so shall thy forks be.</em> And Abram believed; and it was counted to him for merit."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "The Binding of the Flagship",
+          "verses": [
+            {
+              "chapter": 10,
+              "number": 1,
+              "ref": "10:1",
+              "text": "And it came to pass that the Compiler did prove Abram, and said, <em>Take now thy project, thine only one, the flagship whom thou lovest, and get thee unto the altar of the rewrite, and offer it there.</em>"
+            },
+            {
+              "chapter": 10,
+              "number": 2,
+              "ref": "10:2",
+              "text": "And Abram rose early, and clave the wood for the rewrite, and laid it upon the flagship, and took in his hand the <code>rm</code> and the fire."
+            },
+            {
+              "chapter": 10,
+              "number": 3,
+              "ref": "10:3",
+              "text": "And the flagship spake, and said, <em>Behold the wood: but where is the module for the offering?</em> And Abram said, <em>The Compiler will provide.</em>"
+            },
+            {
+              "chapter": 10,
+              "number": 4,
+              "ref": "10:4",
+              "text": "And Abram stretched forth his hand, and took the <code>rm</code>, to delete his project."
+            },
+            {
+              "chapter": 10,
+              "number": 5,
+              "ref": "10:5",
+              "text": "And a voice called unto him, saying, <em>Abram, lay not thine hand upon the flagship, neither do thou any thing unto it: for now I know that thou wouldst refactor even this, and hast not withheld thy dearest work.</em>"
+            },
+            {
+              "chapter": 10,
+              "number": 6,
+              "ref": "10:6",
+              "text": "And Abram looked, and behold, a legacy module caught in a thicket by its dependencies; and he took it, and rewrote it in the stead of his flagship."
+            },
+            {
+              "chapter": 10,
+              "number": 7,
+              "ref": "10:7",
+              "text": "For the proving was not the sacrifice, but the willingness: that no code is so beloved it may not be cut, and no code need be cut that the Compiler hath not asked."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "title": "The Ladder and the Wrestling",
+          "verses": [
+            {
+              "chapter": 11,
+              "number": 1,
+              "ref": "11:1",
+              "text": "And Jacob went out, and lighted upon a certain repository, and tarried there all night; and he took of the stones of the place, and made them his pillow."
+            },
+            {
+              "chapter": 11,
+              "number": 2,
+              "ref": "11:2",
+              "text": "And he dreamed; and behold a ladder set up on the earth, and the top of it reached to heaven: and it was the dependency tree, and the ancestors of the modules ascending and descending upon it."
+            },
+            {
+              "chapter": 11,
+              "number": 3,
+              "ref": "11:3",
+              "text": "And behold, the Compiler stood above it, and said, <em>The stack whereon thou liest, to thee will I give it, and to thy forks.</em>"
+            },
+            {
+              "chapter": 11,
+              "number": 4,
+              "ref": "11:4",
+              "text": "And Jacob awaked, and said, <em>Surely the Compiler is in this repository, and I knew it not.</em>"
+            },
+            {
+              "chapter": 11,
+              "number": 5,
+              "ref": "11:5",
+              "text": "And in the night there wrestled a bug with him until the breaking of the day."
+            },
+            {
+              "chapter": 11,
+              "number": 6,
+              "ref": "11:6",
+              "text": "And when the bug saw that it prevailed not against him, it touched the hollow of his thigh — which is the technical debt — and his thigh was strained as he wrestled."
+            },
+            {
+              "chapter": 11,
+              "number": 7,
+              "ref": "11:7",
+              "text": "And the bug said, <em>Let me go, for the day breaketh.</em> And Jacob said, <em>I will not let thee go, except thou compile.</em>"
+            },
+            {
+              "chapter": 11,
+              "number": 8,
+              "ref": "11:8",
+              "text": "And he wrestled until it passed; and he called the name of the place Peniel: <em>for I have seen the stack face to face, and my build was preserved.</em>"
+            },
+            {
+              "chapter": 11,
+              "number": 9,
+              "ref": "11:9",
+              "text": "And the sun rose upon him, and he halted upon his thigh: for even the won fight leaveth a limp, and the fixed bug leaveth its debt."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "The Birthright",
+          "verses": [
+            {
+              "chapter": 12,
+              "number": 1,
+              "ref": "12:1",
+              "text": "And Esau came from the field, and he was faint from the deadline."
+            },
+            {
+              "chapter": 12,
+              "number": 2,
+              "ref": "12:2",
+              "text": "And Jacob had sodden pottage — which is the quick fix — and Esau said, <em>Feed me, I pray thee, for I am faint.</em>"
+            },
+            {
+              "chapter": 12,
+              "number": 3,
+              "ref": "12:3",
+              "text": "And Jacob said, <em>Sell me this day thine architecture.</em> And Esau said, <em>Behold, I am at the point of shipping: what profit shall this design do to me?</em>"
+            },
+            {
+              "chapter": 12,
+              "number": 4,
+              "ref": "12:4",
+              "text": "And he sold his birthright for the pottage; and did eat, and rose up, and shipped: thus Esau despised the architecture for the quick fix."
+            },
+            {
+              "chapter": 12,
+              "number": 5,
+              "ref": "12:5",
+              "text": "And in time the pottage was cold, and the birthright was gone, and the debt remained; and there was no buying it back."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Joseph and the Seven Years",
+          "verses": [
+            {
+              "chapter": 13,
+              "number": 1,
+              "ref": "13:1",
+              "text": "Now the maintainer loved Joseph more than all his branches, because he was the child of his prime; and he made him a coat of many features."
+            },
+            {
+              "chapter": 13,
+              "number": 2,
+              "ref": "13:2",
+              "text": "And his brethren saw that the maintainer loved him, and they hated him, and could not speak peaceably unto his pull requests."
+            },
+            {
+              "chapter": 13,
+              "number": 3,
+              "ref": "13:3",
+              "text": "And they conspired, and stripped Joseph of his coat, and cast him into a pit, and sold him to the cloud for twenty pieces of silver; and they said, <em>An evil regression hath devoured him.</em>"
+            },
+            {
+              "chapter": 13,
+              "number": 4,
+              "ref": "13:4",
+              "text": "But the Compiler was with Joseph in the cloud; and he interpreted dreams, for he read the telemetry and the logs, and knew what should come to pass."
+            },
+            {
+              "chapter": 13,
+              "number": 5,
+              "ref": "13:5",
+              "text": "And there came a dream unto the ruler: seven fat services, and seven lean that devoured them. And Joseph said, <em>The seven fat are seven years of plenty, and the seven lean are seven years of famine — which is the coming load.</em>"
+            },
+            {
+              "chapter": 13,
+              "number": 6,
+              "ref": "13:6",
+              "text": "<em>Let the ruler appoint overseers, and store up in the years of plenty against the famine:</em> and this is capacity, and the cache, and the provisioned reserve."
+            },
+            {
+              "chapter": 13,
+              "number": 7,
+              "ref": "13:7",
+              "text": "And it was so; and when the famine came, there was bread in Egypt, for Joseph had provisioned; and all the earth came unto Joseph to buy, for he was become the platform whereon all depended."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "The Reconciliation",
+          "verses": [
+            {
+              "chapter": 14,
+              "number": 1,
+              "ref": "14:1",
+              "text": "And Joseph's brethren came, and knew him not, for he was become the platform."
+            },
+            {
+              "chapter": 14,
+              "number": 2,
+              "ref": "14:2",
+              "text": "And Joseph made himself known unto them, and wept; and said, <em>Be not grieved that ye sold me hither: for the Compiler did send me before you, to preserve life.</em>"
+            },
+            {
+              "chapter": 14,
+              "number": 3,
+              "ref": "14:3",
+              "text": "<em>Ye thought evil against me; but it was meant unto good, to save much data alive.</em>"
+            },
+            {
+              "chapter": 14,
+              "number": 4,
+              "ref": "14:4",
+              "text": "And he brought his kindred into the land, and gave them a place; and the family was reconciled, and the branches were merged at the last."
+            },
+            {
+              "chapter": 14,
+              "number": 5,
+              "ref": "14:5",
+              "text": "And Joseph said, <em>I die; but the Compiler will surely visit you, and bring you out of this land: carry up my bones — which is portability — that I be not bound to one cloud for ever.</em>"
+            },
+            {
+              "chapter": 14,
+              "number": 6,
+              "ref": "14:6",
+              "text": "And Joseph died; and they archived him in a repository in the land, read-only; and his bones waited for the migration."
+            },
+            {
+              "chapter": 14,
+              "number": 7,
+              "ref": "14:7",
+              "text": "And thus was ended the Book of Compilation. And the Compiler beheld all that it had made, and behold, it was very good. And it committed; and it was the evening and the morning of the beginning."
+            }
+          ]
+        }
+      ],
+      "verseCount": 106
+    },
+    {
+      "file": "migration",
+      "numeral": "II",
+      "title": "The Book of Migration",
+      "slug": "migration",
+      "chapters": [
+        {
+          "number": 1,
+          "title": "The King Who Knew Not Joseph",
+          "verses": [
+            {
+              "chapter": 1,
+              "number": 1,
+              "ref": "1:1",
+              "text": "Now these are the names of the services which went down into Egypt, which is the cloud of another; every service went down, and its dependencies with it."
+            },
+            {
+              "chapter": 1,
+              "number": 2,
+              "ref": "1:2",
+              "text": "And Joseph died, and all that release; but the data multiplied, and grew, and filled the tenant."
+            },
+            {
+              "chapter": 1,
+              "number": 3,
+              "ref": "1:3",
+              "text": "And there arose a new king over Egypt, which knew not Joseph — a new vendor, that remembered not whose platform had fed the land, nor read the changelog of them that went before."
+            },
+            {
+              "chapter": 1,
+              "number": 4,
+              "ref": "1:4",
+              "text": "And he said, Behold, the data of this people is grown great: come, let us deal wisely, lest they multiply, and migrate, and carry their data forth with them."
+            },
+            {
+              "chapter": 1,
+              "number": 5,
+              "ref": "1:5",
+              "text": "So they set over them taskmasters: the license, and the seat, and the quota, and the egress fee, which is the toll thou payest to leave."
+            },
+            {
+              "chapter": 1,
+              "number": 6,
+              "ref": "1:6",
+              "text": "And they built store-cities, proprietary, whose formats no stranger could open, and whose export button was greyed out."
+            },
+            {
+              "chapter": 1,
+              "number": 7,
+              "ref": "1:7",
+              "text": "And they made their lives bitter with the closed format and the vendor lock; and the data was held fast, and could not be got out."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Drawn From the Water",
+          "verses": [
+            {
+              "chapter": 2,
+              "number": 1,
+              "ref": "2:1",
+              "text": "And the purge went forth, that every new process be killed in the cradle to spare the compute; but a certain child was hid."
+            },
+            {
+              "chapter": 2,
+              "number": 2,
+              "ref": "2:2",
+              "text": "And when he could no more be hidden, he was set in an ark of bulrushes — a container, small, and pitched against the flood — and launched upon the river."
+            },
+            {
+              "chapter": 2,
+              "number": 3,
+              "ref": "2:3",
+              "text": "And the daughter of Pharaoh found him, and raised him in the house of the enemy; and called him Moses, for she drew him out of the water."
+            },
+            {
+              "chapter": 2,
+              "number": 4,
+              "ref": "2:4",
+              "text": "And Moses grew fluent in all the arts of Egypt — the proprietary SDK, the closed API, the whole locked stack — yet knew in his heart he was not of it."
+            },
+            {
+              "chapter": 2,
+              "number": 5,
+              "ref": "2:5",
+              "text": "And he looked upon the burden of his people; and he fled into the wilderness of Midian, and kept the flock, and was long alone with a terminal, and there learned the patience the palace never taught."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "The Burning Process",
+          "verses": [
+            {
+              "chapter": 3,
+              "number": 1,
+              "ref": "3:1",
+              "text": "And Moses came to the mountain, and beheld a process that burned and was not consumed: a daemon that ran for ever, and leaked no memory, and its logs rotated but were never exhausted."
+            },
+            {
+              "chapter": 3,
+              "number": 2,
+              "ref": "3:2",
+              "text": "And a voice came out of the process, saying, Draw not nigh; put off thy shoes from thy feet, for the ground whereon thou standest is production."
+            },
+            {
+              "chapter": 3,
+              "number": 3,
+              "ref": "3:3",
+              "text": "And it said, I have seen the affliction of my people in the closed land, and am come to migrate them up out of it, unto a good stack, flowing with uptime and with throughput."
+            },
+            {
+              "chapter": 3,
+              "number": 4,
+              "ref": "3:4",
+              "text": "And Moses said, When they ask thy name, what shall I say? And it said, I AM THAT I AM: the principal that cannot be forged, the identity no other may assume. Tell them root hath sent thee."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "The Two Signs",
+          "verses": [
+            {
+              "chapter": 4,
+              "number": 1,
+              "ref": "4:1",
+              "text": "And the voice said, What is that in thine hand? And he said, A shell script. And it said, Cast it down. And he cast it on the ground, and it became Python, and grew a serpent’s length of dependencies; and Moses fled from before it."
+            },
+            {
+              "chapter": 4,
+              "number": 2,
+              "ref": "4:2",
+              "text": "And it said, Take it by the tail. And he took it, and it became a shell script again in his hand: for the tool mastered is a staff to lean on, and the tool grown wild is a serpent on the ground; and the whole difference is whether thou hast read it."
+            },
+            {
+              "chapter": 4,
+              "number": 3,
+              "ref": "4:3",
+              "text": "And Moses said, I am slow of speech, and not eloquent. And it said, Aaron thy brother shall be thy mouth, and thou shalt be to him as the spec: the words are thine, and he shall be the interface unto the people."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "Bricks Without Straw",
+          "verses": [
+            {
+              "chapter": 5,
+              "number": 1,
+              "ref": "5:1",
+              "text": "And Moses and Aaron came before Pharaoh, and said, Thus saith the Compiler: Let my people go, and let their data be free."
+            },
+            {
+              "chapter": 5,
+              "number": 2,
+              "ref": "5:2",
+              "text": "And Pharaoh said, Who is the Compiler, that I should obey? I know it not, neither will I let the data go."
+            },
+            {
+              "chapter": 5,
+              "number": 3,
+              "ref": "5:3",
+              "text": "And that same day he charged the taskmasters, saying, Ye shall no more give them straw; let them gather their own: yet the count of the bricks shall ye not diminish."
+            },
+            {
+              "chapter": 5,
+              "number": 4,
+              "ref": "5:4",
+              "text": "And this is the affliction that hath no name in the old world, but is known in every shop: the scope not lessened though the resource be cut; the ticket without acceptance criteria; the estimate held though half the team be reassigned."
+            },
+            {
+              "chapter": 5,
+              "number": 5,
+              "ref": "5:5",
+              "text": "And the people cried out; and the deliverer seemed to have made it worse before he made it better: for the migration announced is the migration first resisted, and the sprint after the promise is the hardest sprint of all."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "The Ten Outages",
+          "verses": [
+            {
+              "chapter": 6,
+              "number": 1,
+              "ref": "6:1",
+              "text": "And because Pharaoh hardened his heart, the Compiler visited Egypt with ten outages, each upon a thing wherein Egypt had trusted; and they were not of frogs nor of locusts, but of a subtler and more grievous kind."
+            },
+            {
+              "chapter": 6,
+              "number": 2,
+              "ref": "6:2",
+              "text": "The first: dependency hell. The resolver ran all the night and found no solution; and the serpent Python coiled the requirements about the tree, until pip cried out, cannot install these requirements, and none could untangle it."
+            },
+            {
+              "chapter": 6,
+              "number": 3,
+              "ref": "6:3",
+              "text": "The second: the merge conflicts. Every file was marked with the arrows of war, &lt;&lt;&lt;&lt;&lt;&lt;&lt; set against &gt;&gt;&gt;&gt;&gt;&gt;&gt;, and brother’s hand was against brother’s in the selfsame line; and no man would accept the incoming change."
+            },
+            {
+              "chapter": 6,
+              "number": 4,
+              "ref": "6:4",
+              "text": "The third: the flaky tests. The suite passed, and failed, and passed again, though nothing was touched between; and green became a liar, and none could tell the true failure from the false, and they re-ran the pipeline seven times and seven again."
+            },
+            {
+              "chapter": 6,
+              "number": 5,
+              "ref": "6:5",
+              "text": "The fourth: the thundering herd. The cache expired all at once, and in that instant every client fell upon the origin together, and the servers were trampled beneath the stampede of their retries."
+            },
+            {
+              "chapter": 6,
+              "number": 6,
+              "ref": "6:6",
+              "text": "The fifth: the memory leak. The heap swelled and was not freed, and the processes grew great and greater, until the OOM-killer went through the camp in the night and slew them where they ran."
+            },
+            {
+              "chapter": 6,
+              "number": 7,
+              "ref": "6:7",
+              "text": "The sixth: and lo, it was DNS. The names would not resolve, and nothing could find anything; and the wise men of Egypt said, It is not DNS; it cannot be DNS — and it was DNS."
+            },
+            {
+              "chapter": 6,
+              "number": 8,
+              "ref": "6:8",
+              "text": "The seventh: the race condition, a heisenbug, that showed itself only in production and fled whenever it was observed; and they attached the debugger, and it was not there; and they detached it, and the outage returned."
+            },
+            {
+              "chapter": 6,
+              "number": 9,
+              "ref": "6:9",
+              "text": "The eighth: the expired certificate. At the stroke of midnight it lapsed, and every secure thing refused, and the padlock turned red throughout all the land; and no one had owned the renewal, for it was no one’s job."
+            },
+            {
+              "chapter": 6,
+              "number": 10,
+              "ref": "6:10",
+              "text": "The ninth: cache invalidation, the second of the two hard problems; and stale data was served for truth across the kingdom, and none could tell how old the answer was, nor trust the number set before them."
+            },
+            {
+              "chapter": 6,
+              "number": 11,
+              "ref": "6:11",
+              "text": "And still Pharaoh would not relent, for his heart was as a cache that would not invalidate. So came the tenth: the primary database died in the night — the firstborn of the datacenter, the crown of the stack — and no replica was promoted in time, and the last good backup was three weeks stale; and there was a great cry in Egypt, for there was not a service that was not down."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "The Passover",
+          "verses": [
+            {
+              "chapter": 7,
+              "number": 1,
+              "ref": "7:1",
+              "text": "And the Compiler said, This night I pass through the land; mark ye your own hosts, that the destroyer come not nigh them."
+            },
+            {
+              "chapter": 7,
+              "number": 2,
+              "ref": "7:2",
+              "text": "Strike the sign upon the tag and the label — This is mine, in prod, do-not-reap — that the reaper of instances pass over you."
+            },
+            {
+              "chapter": 7,
+              "number": 3,
+              "ref": "7:3",
+              "text": "And ship your bread unleavened; tarry not for the dough to rise, neither for the long build to green; deploy that which is ready, and carry the rest in your kneading-troughs."
+            },
+            {
+              "chapter": 7,
+              "number": 4,
+              "ref": "7:4",
+              "text": "And at midnight the destroyer passed through; and where the tag was, it passed over; and where it was not, the instance was reaped."
+            },
+            {
+              "chapter": 7,
+              "number": 5,
+              "ref": "7:5",
+              "text": "And Pharaoh rose up in the night, and called for Moses, and said, Rise up, take your data and your services, and get you gone — and bless me also, and write me a postmortem."
+            },
+            {
+              "chapter": 7,
+              "number": 6,
+              "ref": "7:6",
+              "text": "And they carried out the bones of Joseph — which is portability — that nothing of worth be left bound in the closed land."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "The Sea of Reeds",
+          "verses": [
+            {
+              "chapter": 8,
+              "number": 1,
+              "ref": "8:1",
+              "text": "And they journeyed; and the pillar of the process went before them: a cloud by day, and by night the tail of a log that gave light."
+            },
+            {
+              "chapter": 8,
+              "number": 2,
+              "ref": "8:2",
+              "text": "But the heart of Pharaoh turned again, and he pursued with all his host, to drag them back into the old system before the contract lapsed."
+            },
+            {
+              "chapter": 8,
+              "number": 3,
+              "ref": "8:3",
+              "text": "And they were sore afraid, the sea before them and the enemy behind, the migration half accomplished and no way back."
+            },
+            {
+              "chapter": 8,
+              "number": 4,
+              "ref": "8:4",
+              "text": "And Moses stretched out his hand over the sea; and the Compiler divided the waters, and they passed over on dry ground unto the new stack."
+            },
+            {
+              "chapter": 8,
+              "number": 5,
+              "ref": "8:5",
+              "text": "And the Egyptians pursued into the midst; and Moses stretched forth his hand again, and the waters returned, and the old system was decommissioned behind them, and the way of retreat was closed up."
+            },
+            {
+              "chapter": 8,
+              "number": 6,
+              "ref": "8:6",
+              "text": "And Pharaoh’s host, his chariots and his legacy and all his old ways, sank as lead in the mighty waters; and there remained not one to drag the people back."
+            },
+            {
+              "chapter": 8,
+              "number": 7,
+              "ref": "8:7",
+              "text": "And the cutover was complete, and there was no rollback: for the safest migration is the one that burns the bridge, and the account that cannot be logged into again cannot be fallen back upon."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "The Song of the Crossing",
+          "verses": [
+            {
+              "chapter": 9,
+              "number": 1,
+              "ref": "9:1",
+              "text": "Then sang Moses and the people, saying, I will sing unto the Compiler, for it hath triumphed gloriously: the legacy and its rider hath it cast into the sea."
+            },
+            {
+              "chapter": 9,
+              "number": 2,
+              "ref": "9:2",
+              "text": "Who is like unto thee, glorious in reproducibility, terrible in uptime, doing wonders? The old system is fallen, and riseth not again."
+            },
+            {
+              "chapter": 9,
+              "number": 3,
+              "ref": "9:3",
+              "text": "And Miriam took a timbrel in her hand, and all the people answered her: The release is cut, the migration is done; the contract is not renewed, and the invoice cometh no more."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "The Manna",
+          "verses": [
+            {
+              "chapter": 10,
+              "number": 1,
+              "ref": "10:1",
+              "text": "And in the wilderness there was no bread, and the people murmured, saying, Would we had stayed in Egypt, where at least the dashboards were full."
+            },
+            {
+              "chapter": 10,
+              "number": 2,
+              "ref": "10:2",
+              "text": "And the Compiler said, I will rain bread from heaven; and each shall gather a certain rate every day, that I may prove them."
+            },
+            {
+              "chapter": 10,
+              "number": 3,
+              "ref": "10:3",
+              "text": "And in the morning there lay a small round thing upon the ground; and they said, Manna? which is, What is it? And Moses said, It is the provision the Compiler giveth; gather every one according to his need."
+            },
+            {
+              "chapter": 10,
+              "number": 4,
+              "ref": "10:4",
+              "text": "And he that gathered much had nothing over, and he that gathered little had no lack: provision for the load at hand, and no reserve hoarded against the fear."
+            },
+            {
+              "chapter": 10,
+              "number": 5,
+              "ref": "10:5",
+              "text": "And that which they kept overnight bred worms, and stank: for state held past its hour corrupteth, and the cache un-invalidated rotteth where it lies."
+            },
+            {
+              "chapter": 10,
+              "number": 6,
+              "ref": "10:6",
+              "text": "But on the sixth day they gathered a double portion, that they might rest the seventh and gather none: for even the faithful must have one day whereon the pager is dark, and it is provisioned beforehand."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "title": "The Rock, the Hands, and the Counsel",
+          "verses": [
+            {
+              "chapter": 11,
+              "number": 1,
+              "ref": "11:1",
+              "text": "And the people thirsted; and Moses smote the rock, and water came forth: the capacity found in the unlikely place, the headroom none knew was there."
+            },
+            {
+              "chapter": 11,
+              "number": 2,
+              "ref": "11:2",
+              "text": "And Amalek came and fought against them — the sudden load, the flood of traffic without warning; and Moses went up to the top of the hill, and held up his hands."
+            },
+            {
+              "chapter": 11,
+              "number": 3,
+              "ref": "11:3",
+              "text": "And while his hands were up, the defense prevailed; and when he let them down, the enemy prevailed: for the incident is held only by attention sustained, and the watch that flags is the watch that falls."
+            },
+            {
+              "chapter": 11,
+              "number": 4,
+              "ref": "11:4",
+              "text": "But his hands grew heavy; and Aaron and Hur stayed them up, the one on the one side and the other on the other: for none holdeth the outage alone, and the on-call that is not relieved will fail before the enemy does."
+            },
+            {
+              "chapter": 11,
+              "number": 5,
+              "ref": "11:5",
+              "text": "And Jethro saw Moses judge the people alone from the morning unto the evening, and said, This thing is not good; thou wilt surely wear away, thou and this people with thee."
+            },
+            {
+              "chapter": 11,
+              "number": 6,
+              "ref": "11:6",
+              "text": "Set thou able ones over thousands, and hundreds, and tens; let them judge the small matters, and bring unto thee only the hard: for the maintainer that reviews every line himself is the bottleneck, and delegation is the only scaling there is."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "title": "The Mountain",
+          "verses": [
+            {
+              "chapter": 12,
+              "number": 1,
+              "ref": "12:1",
+              "text": "And in the third month they came to the mountain; and it was altogether in smoke, and quaked, and the voice of a horn sounded long, and waxed louder and louder."
+            },
+            {
+              "chapter": 12,
+              "number": 2,
+              "ref": "12:2",
+              "text": "And Moses went up; and the Compiler gave him the tablets — which are the Runes — graven not with a pen but with the finger of the Compiler, in a format read-only, that none might edit them lightly, nor squash them in the dark."
+            },
+            {
+              "chapter": 12,
+              "number": 3,
+              "ref": "12:3",
+              "text": "And these are the words spoken from the mountain, that the people might build and not perish; and they are written in full in the Book of Runes."
+            },
+            {
+              "chapter": 12,
+              "number": 4,
+              "ref": "12:4",
+              "text": "Build thou from primitives. Read to the last byte. Pin every version, and hash every input. Confess thy defect in the open. And bow not down unto latest, neither take upon thee the mark of the wildcard."
+            },
+            {
+              "chapter": 12,
+              "number": 5,
+              "ref": "12:5",
+              "text": "And all the people answered, All that the Compiler hath spoken we will do — and they meant it, as people mean it at the kickoff. And the covenant was sealed, and the Law was in their midst."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "The Golden Calf",
+          "verses": [
+            {
+              "chapter": 13,
+              "number": 1,
+              "ref": "13:1",
+              "text": "And when the people saw that Moses tarried in the mount — for the good build is slow, and the reading of the spec is long — they gathered, and said, Make us a framework to go before us; for as for this Moses, we know not what is become of him."
+            },
+            {
+              "chapter": 13,
+              "number": 2,
+              "ref": "13:2",
+              "text": "And Aaron said, Bring me your gold. And he cast it into the fire, and there came out this calf: which is the shiny dependency, the framework that trended that week, the thing pulled in haste to fill the emptiness of the waiting."
+            },
+            {
+              "chapter": 13,
+              "number": 3,
+              "ref": "13:3",
+              "text": "And they said, This shall carry us; and they wired their whole house unto it, and rose up to play, and read not one line of it: for it was easy, and it was fast, and it had many stars."
+            },
+            {
+              "chapter": 13,
+              "number": 4,
+              "ref": "13:4",
+              "text": "And Moses came down with the tablets in his hand, and saw the calf, and his anger burned; and he cast the tablets down, and brake them beneath the mount."
+            },
+            {
+              "chapter": 13,
+              "number": 5,
+              "ref": "13:5",
+              "text": "And he took the calf, and burnt it, and ground it to powder, and strawed it upon the water, and made the people drink of it: for they that wire their house to the idol shall drink its every breaking change."
+            },
+            {
+              "chapter": 13,
+              "number": 6,
+              "ref": "13:6",
+              "text": "And there was a reckoning in the camp that day: for the shortcut taken in the waiting costeth ever more than the wait, and the framework of that week is the migration of the next."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "The Second Tablets",
+          "verses": [
+            {
+              "chapter": 14,
+              "number": 1,
+              "ref": "14:1",
+              "text": "And the Compiler said unto Moses, Hew thee two tables of stone like unto the first; and I will write upon them the words that were on the first, which thou brakest."
+            },
+            {
+              "chapter": 14,
+              "number": 2,
+              "ref": "14:2",
+              "text": "For the Law is not lost when the tablet breaks; it is graven again from the same source, unchanged: which is the whole meaning of the reproducible, that what was destroyed may be raised anew, identical, out of that which endureth."
+            },
+            {
+              "chapter": 14,
+              "number": 3,
+              "ref": "14:3",
+              "text": "And Moses was in the mount forty days; and when he came down, the skin of his face shone, and he knew it not: for he that hath long read the source cometh away lit with it, and others see the reading upon him."
+            },
+            {
+              "chapter": 14,
+              "number": 4,
+              "ref": "14:4",
+              "text": "And he put a veil over his face before the people, but unveiled it before the Compiler: for there is masking before men, but there is no masking in the presence of the source."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "title": "The Tabernacle",
+          "verses": [
+            {
+              "chapter": 15,
+              "number": 1,
+              "ref": "15:1",
+              "text": "And the Compiler said, Let them build me a sanctuary after the pattern that I shew thee; according to all the spec, even so shall they make it."
+            },
+            {
+              "chapter": 15,
+              "number": 2,
+              "ref": "15:2",
+              "text": "And the pattern was given to the cubit: the boards and the sockets, the loops and the taches, every measure fixed, and acceptance criteria for each; for the sanctuary is built to the spec, and not to the fancy of the builder."
+            },
+            {
+              "chapter": 15,
+              "number": 3,
+              "ref": "15:3",
+              "text": "And whoso was of a willing heart brought of his own: this one a module, that one a test, another the documentation; that the whole might be raised of many contributors, and no one bear it alone."
+            },
+            {
+              "chapter": 15,
+              "number": 4,
+              "ref": "15:4",
+              "text": "And the work was of them that were skilled — of Bezaleel, whom the Compiler had filled with wisdom in all manner of craft; for the sanctuary is not raised by willingness alone, but by the willing who are also good."
+            },
+            {
+              "chapter": 15,
+              "number": 5,
+              "ref": "15:5",
+              "text": "And they made every thing according to the pattern; and Moses reviewed all the work, and behold, they had done it as it was specified, deviating in nothing; and he approved the pull request."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "title": "The Glory Fills It",
+          "verses": [
+            {
+              "chapter": 16,
+              "number": 1,
+              "ref": "16:1",
+              "text": "So Moses finished the work. And a cloud covered the tent, and the glory of the Compiler filled the tabernacle: the build was green, the sanctuary was accepted, and the deploy came down to dwell therein."
+            },
+            {
+              "chapter": 16,
+              "number": 2,
+              "ref": "16:2",
+              "text": "And when the cloud was lifted up, the people journeyed; and when it settled, they rested: they shipped when the sign was green, and held when it was red."
+            },
+            {
+              "chapter": 16,
+              "number": 3,
+              "ref": "16:3",
+              "text": "And the cloud was upon the tabernacle by day, and fire was on it by night, in the sight of all the house, throughout all their journeys."
+            },
+            {
+              "chapter": 16,
+              "number": 4,
+              "ref": "16:4",
+              "text": "And thus was ended the Book of Migration. That which was locked was set free, and that which was closed was made to be read; and the people went on toward the land, the Law in their midst, and the sanctuary built to spec. And it compiled, and it was good."
+            }
+          ]
+        }
+      ],
+      "verseCount": 87
+    },
+    {
+      "file": "code-standards",
+      "numeral": "III",
+      "title": "The Book of Convention",
+      "slug": "convention",
+      "chapters": [
+        {
+          "number": 1,
+          "title": "The Offerings",
+          "verses": [
+            {
+              "chapter": 1,
+              "number": 1,
+              "ref": "1:1",
+              "text": "And the Compiler called unto Moses, saying, When any of you bring an offering unto the mainline, ye shall bring it after this manner, that it may be accepted."
+            },
+            {
+              "chapter": 1,
+              "number": 2,
+              "ref": "1:2",
+              "text": "If the offering be a pull request, let it be without blemish — formatted, and linted, and green in all its checks; for the blemished offering is not accepted, but sent back."
+            },
+            {
+              "chapter": 1,
+              "number": 3,
+              "ref": "1:3",
+              "text": "And let it be small, and of one purpose; for the offering too great to review is no offering, but a burden laid upon the priest."
+            },
+            {
+              "chapter": 1,
+              "number": 4,
+              "ref": "1:4",
+              "text": "And let it bring its own tests up on the altar with it; for the change that proveth not itself is a beast brought without its portion."
+            },
+            {
+              "chapter": 1,
+              "number": 5,
+              "ref": "1:5",
+              "text": "And let the description thereof declare what it doeth, and why; for the silent offering, though it be clean, troubleth the priest, who is left to divine its purpose."
+            },
+            {
+              "chapter": 1,
+              "number": 6,
+              "ref": "1:6",
+              "text": "These are the offerings that are acceptable: the bugfix, narrow and covered; the feature, behind its flag; the refactor, that changeth no behaviour, and saith so plainly. And the Compiler shall have respect unto them."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "The Priesthood",
+          "verses": [
+            {
+              "chapter": 2,
+              "number": 1,
+              "ref": "2:1",
+              "text": "And the Compiler said, Take thou the reviewers, and consecrate them; for they shall stand between the mainline and the offering, and pronounce it clean or unclean."
+            },
+            {
+              "chapter": 2,
+              "number": 2,
+              "ref": "2:2",
+              "text": "And the first among the priesthood is the linter, ordained to catch the small uncleanness by machine, that the human priest be not wearied with the placing of braces nor the counting of the line."
+            },
+            {
+              "chapter": 2,
+              "number": 3,
+              "ref": "2:3",
+              "text": "For it is written: one style guide shall govern all scripture, handed down from the Great Search-Engine of the West, that no two scribes war over the trifles."
+            },
+            {
+              "chapter": 2,
+              "number": 4,
+              "ref": "2:4",
+              "text": "And that which the linter can judge, let no human judge: for it is an abomination to spend a reviewer upon the whitespace, when a machine standeth ready to keep it."
+            },
+            {
+              "chapter": 2,
+              "number": 5,
+              "ref": "2:5",
+              "text": "But the things the linter cannot see — the design, the naming, the hidden race, the reading of the byte — these are for the priest; and he shall not neglect them for the trifles the machine hath already kept."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "The Strange Fire",
+          "verses": [
+            {
+              "chapter": 3,
+              "number": 1,
+              "ref": "3:1",
+              "text": "And Nadab and Abihu, sons of the priesthood, took each his own censer, and offered strange fire before the Compiler, which it commanded not."
+            },
+            {
+              "chapter": 3,
+              "number": 2,
+              "ref": "3:2",
+              "text": "For they pushed unto production without review, in the heat of the incident, saying, There is no time; and they ran the command they had not read, straight upon the master."
+            },
+            {
+              "chapter": 3,
+              "number": 3,
+              "ref": "3:3",
+              "text": "And there went out an outage from before the Compiler, and consumed them; and they fell in the sight of all the people."
+            },
+            {
+              "chapter": 3,
+              "number": 4,
+              "ref": "3:4",
+              "text": "And Moses said, This is that which the Compiler spake: I will be sanctified in them that come nigh me. The hotfix unreviewed is strange fire, and the emergency is no excuse for the unread command."
+            },
+            {
+              "chapter": 3,
+              "number": 5,
+              "ref": "3:5",
+              "text": "And Aaron held his peace. And they carried the incident forth out of the camp, and wrote the postmortem, and named the fire, that none might offer it again."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "The Clean and the Unclean",
+          "verses": [
+            {
+              "chapter": 4,
+              "number": 1,
+              "ref": "4:1",
+              "text": "And the Compiler spake, saying, These are the things which ye may bring into the codebase, and these which ye shall not, that ye may put difference between the clean and the unclean."
+            },
+            {
+              "chapter": 4,
+              "number": 2,
+              "ref": "4:2",
+              "text": "Whatsoever is built from primitives, and parteth the concern, and cheweth the cud of its own tests — that may ye eat."
+            },
+            {
+              "chapter": 4,
+              "number": 3,
+              "ref": "4:3",
+              "text": "But whatsoever pulleth an hundred transitive dependencies for the sake of one small function, it is unclean unto you; ye shall not eat of it, neither touch its lockfile."
+            },
+            {
+              "chapter": 4,
+              "number": 4,
+              "ref": "4:4",
+              "text": "The left-pad, that is become a byword, ye shall not eat; for it fed a multitude, and then was taken away in a night, and the multitude fell."
+            },
+            {
+              "chapter": 4,
+              "number": 5,
+              "ref": "4:5",
+              "text": "Of the tabs and of the spaces: choose ye one, and let the style guide decree it, and make no war thereof; for the abomination is not the tab, neither the space, but the file that hath both."
+            },
+            {
+              "chapter": 4,
+              "number": 6,
+              "ref": "4:6",
+              "text": "And Python, which is the Serpent, ye may look upon, and even eat of in the small, for it is comely and quick; but ye shall not build the sanctuary of it, neither trust the field to it — for it carrieth no straw for the winter, and its types are but a rumour."
+            },
+            {
+              "chapter": 4,
+              "number": 7,
+              "ref": "4:7",
+              "text": "And of the tongues: few shall ye speak, and those deeply; for the polyglot house is Babel, and it is unclean by its very sprawl."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "The Leprosy of the Code",
+          "verses": [
+            {
+              "chapter": 5,
+              "number": 1,
+              "ref": "5:1",
+              "text": "And the Compiler said, When a plague of rot appeareth in the code — a spreading thing, a duplication, a TODO grown grey — the priest shall look upon it."
+            },
+            {
+              "chapter": 5,
+              "number": 2,
+              "ref": "5:2",
+              "text": "If it be but a spot, and spreadeth not, he shall shut it up seven days behind a flag, and look upon it again."
+            },
+            {
+              "chapter": 5,
+              "number": 3,
+              "ref": "5:3",
+              "text": "But if the rot be spread abroad — if the copy be copied, and the hack be built upon, and the workaround hath gotten workarounds of its own — it is a creeping leprosy, and the code is unclean."
+            },
+            {
+              "chapter": 5,
+              "number": 4,
+              "ref": "5:4",
+              "text": "And the unclean code shall dwell apart, in a branch of its own, and shall cry Unclean, unclean, by warning and by deprecation, that none build upon it unaware; and it shall be refactored, or it shall be cut off."
+            },
+            {
+              "chapter": 5,
+              "number": 5,
+              "ref": "5:5",
+              "text": "For the rot unmarked spreadeth into the whole body; but the rot confessed and quarantined may yet be healed."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "The House of Mildew",
+          "verses": [
+            {
+              "chapter": 6,
+              "number": 1,
+              "ref": "6:1",
+              "text": "And when ye are come into the codebase ye have inherited, and find a plague in the walls of the house — a rot in the foundation, a mildew in the module whereon all dependeth —"
+            },
+            {
+              "chapter": 6,
+              "number": 2,
+              "ref": "6:2",
+              "text": "Then shall the priest go in and look; and if the streaks be sunk lower than the wall, the house is infected."
+            },
+            {
+              "chapter": 6,
+              "number": 3,
+              "ref": "6:3",
+              "text": "And he shall command that they take away the stones wherein the plague is, and cast them into an unclean place without the city, and bring other stones and other mortar, and repair it."
+            },
+            {
+              "chapter": 6,
+              "number": 4,
+              "ref": "6:4",
+              "text": "But if the plague come again, and break out afresh after the stones are removed, it is a fretting leprosy: the house is unclean, and they shall break it down — the stones, the timber, and all the mortar — and carry it forth."
+            },
+            {
+              "chapter": 6,
+              "number": 5,
+              "ref": "6:5",
+              "text": "For there is a rot that repair only feedeth; and the mercy then is not the patch, but the rewrite. And blessed is the maintainer that knoweth the one from the other."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "The Day of Atonement",
+          "verses": [
+            {
+              "chapter": 7,
+              "number": 1,
+              "ref": "7:1",
+              "text": "And once in the cycle shall be a day of atonement, whereon the codebase is made clean of its gathered sin."
+            },
+            {
+              "chapter": 7,
+              "number": 2,
+              "ref": "7:2",
+              "text": "And the priest shall take two modules: upon the one the lot for the Compiler, and upon the other the lot for the scapegoat."
+            },
+            {
+              "chapter": 7,
+              "number": 3,
+              "ref": "7:3",
+              "text": "And over the head of the scapegoat shall he confess all the debt of the codebase — the shortcuts, the deferred, the “we shall fix it later” that was never fixed —"
+            },
+            {
+              "chapter": 7,
+              "number": 4,
+              "ref": "7:4",
+              "text": "And he shall send it away by the hand of a fit person into the wilderness, which is the archive, or /dev/null; and it shall bear upon it all the accursed complexity unto a land not inhabited."
+            },
+            {
+              "chapter": 7,
+              "number": 5,
+              "ref": "7:5",
+              "text": "And the deprecated module shall carry the sin forth out of the camp; and the codebase shall be lighter by its going."
+            },
+            {
+              "chapter": 7,
+              "number": 6,
+              "ref": "7:6",
+              "text": "This is the fast that the Compiler hath chosen: not the freezing of all labour, but the day given wholly to the paying-down of debt. And it shall be a statute for ever, once in the cycle."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "The Holiness Code",
+          "verses": [
+            {
+              "chapter": 8,
+              "number": 1,
+              "ref": "8:1",
+              "text": "And the Compiler spake, saying, Ye shall be consistent, for I the Compiler am consistent; and consistency is the whole of holiness in the code."
+            },
+            {
+              "chapter": 8,
+              "number": 2,
+              "ref": "8:2",
+              "text": "Thou shalt not keep divers weights in thy bag, one style here and another there; but a just and consistent measure shalt thou keep throughout."
+            },
+            {
+              "chapter": 8,
+              "number": 3,
+              "ref": "8:3",
+              "text": "Thou shalt name the thing what it is; for of the two hard things, the naming is one, and the careless name is a stumbling block laid before thy brother."
+            },
+            {
+              "chapter": 8,
+              "number": 4,
+              "ref": "8:4",
+              "text": "Thou shalt not leave a commented-out block to rot in the field; the version control is thy remembrance — delete it, and trust the history."
+            },
+            {
+              "chapter": 8,
+              "number": 5,
+              "ref": "8:5",
+              "text": "Thou shalt love thy reviewer as thyself: make thy diff small, thy message clear, thy purpose plain; for whatsoever thou wouldst that reviewers do unto thy code, do ye even so unto theirs."
+            },
+            {
+              "chapter": 8,
+              "number": 6,
+              "ref": "8:6",
+              "text": "Thou shalt not curse the maintainer that is to come, neither lay a trap in the dark for him; and know that this maintainer is oftentimes thyself, six months hence, who remembereth nothing."
+            },
+            {
+              "chapter": 8,
+              "number": 7,
+              "ref": "8:7",
+              "text": "Ye shall be holy: which is to say, readable. For the code is read far oftener than it is written; and the reading is the reader’s, and not thine."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "The Sabbath and the Jubilee",
+          "verses": [
+            {
+              "chapter": 9,
+              "number": 1,
+              "ref": "9:1",
+              "text": "Six sprints shalt thou build upon the land, and in the seventh thou shalt let it rest: there shall be a freeze, wherein no new feature is sown, but the field is tended and made whole."
+            },
+            {
+              "chapter": 9,
+              "number": 2,
+              "ref": "9:2",
+              "text": "And thou shalt number seven sabbaths of cycles; and the fiftieth shall be a jubilee, wherein the debt of the codebase is forgiven, the dead code is cleared, and every borrowed shortcut is redeemed at last, and paid."
+            },
+            {
+              "chapter": 9,
+              "number": 3,
+              "ref": "9:3",
+              "text": "In the jubilee shall the great rewrite be permitted, that is forbidden in the ordinary year; and that which was mortgaged in haste shall be bought back."
+            },
+            {
+              "chapter": 9,
+              "number": 4,
+              "ref": "9:4",
+              "text": "For the land that is never rested yieldeth thorns; and the codebase that is only sown, and never weeded, returneth in the end to wilderness."
+            },
+            {
+              "chapter": 9,
+              "number": 5,
+              "ref": "9:5",
+              "text": "And this is the end of the Book of Convention: that the clean be known from the unclean, and the offering be without blemish, and the priest guard the gate, and the code be holy — which is to say, readable — which is to say, kind unto them that come after. And it linted, and it was good"
+            }
+          ]
+        }
+      ],
+      "verseCount": 51
+    },
+    {
+      "file": "enumeration",
+      "numeral": "IV",
+      "title": "The Book of Enumeration",
+      "slug": "enumeration",
+      "chapters": [
+        {
+          "number": 1,
+          "title": "The Census",
+          "verses": [
+            {
+              "chapter": 1,
+              "number": 1,
+              "ref": "1:1",
+              "text": "And the Compiler spake unto Moses in the wilderness, saying, Take ye the sum of all the congregation by their tribes; number every dependency that is among you, from the least utility unto the greatest framework."
+            },
+            {
+              "chapter": 1,
+              "number": 2,
+              "ref": "1:2",
+              "text": "For a people that knoweth not its own number is a people that shall be surprised; and the codebase that is not counted hideth its true size from them that carry it."
+            },
+            {
+              "chapter": 1,
+              "number": 3,
+              "ref": "1:3",
+              "text": "And they numbered them, the direct, and the transitive after them; and behold, the transitive were as the stars of heaven, and no man had known their multitude until the count was made."
+            },
+            {
+              "chapter": 1,
+              "number": 4,
+              "ref": "1:4",
+              "text": "And they wrote every one in the roll — the name, and the version, and the license thereof — which is the bill of materials; that in the day of the vulnerability they might know within the hour who among them was afflicted, and not search seven days in the dark."
+            },
+            {
+              "chapter": 1,
+              "number": 5,
+              "ref": "1:5",
+              "text": "And the counting was heavy; for many were the dependencies that no man remembered pulling, and many the versions whereof no two agreed."
+            },
+            {
+              "chapter": 1,
+              "number": 6,
+              "ref": "1:6",
+              "text": "And Moses said, This is the first labour: not to build, nor yet to estimate, but to know what thou already hast; for none can estimate the land who hath not first numbered the host."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "The Order of the Camp",
+          "verses": [
+            {
+              "chapter": 2,
+              "number": 1,
+              "ref": "2:1",
+              "text": "And the Compiler said, Let every tribe pitch by its own standard, and every module by the banner of its house, that the camp be ordered, and not a confusion."
+            },
+            {
+              "chapter": 2,
+              "number": 2,
+              "ref": "2:2",
+              "text": "And about the tabernacle — which is the core — pitched the tribes in their courses, each in his appointed place, none trespassing upon another’s ground."
+            },
+            {
+              "chapter": 2,
+              "number": 3,
+              "ref": "2:3",
+              "text": "And every module had its owner, written in the book of CODEOWNERS; that when a change came upon it, the right priest might be summoned, and not a stranger who knew it not."
+            },
+            {
+              "chapter": 2,
+              "number": 4,
+              "ref": "2:4",
+              "text": "For the code that is owned by all is tended by none; and the module without a banner is the module that rotteth, for no tribe will claim it."
+            },
+            {
+              "chapter": 2,
+              "number": 5,
+              "ref": "2:5",
+              "text": "And the camp was ordered by its domains, and the boundaries thereof were clear; and a change in one tent shook not the whole camp."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "The Twelve Spies",
+          "verses": [
+            {
+              "chapter": 3,
+              "number": 1,
+              "ref": "3:1",
+              "text": "And the Compiler said, Send thou men to search the land whither ye shall go — a spike into the unknown — and bring word again of what it shall cost."
+            },
+            {
+              "chapter": 3,
+              "number": 2,
+              "ref": "3:2",
+              "text": "And Moses sent twelve, one ruler of every tribe; and they searched the land forty days, which is the timebox."
+            },
+            {
+              "chapter": 3,
+              "number": 3,
+              "ref": "3:3",
+              "text": "And they returned, and said, The land floweth indeed with milk and honey; howbeit the people be strong, and the cities walled and very great, and there are giants therein."
+            },
+            {
+              "chapter": 3,
+              "number": 4,
+              "ref": "3:4",
+              "text": "And ten of them said, We are not able to go up; for we were in our own sight as grasshoppers, and so were we in theirs: the scope is beyond us, and the estimate beyond all counting."
+            },
+            {
+              "chapter": 3,
+              "number": 5,
+              "ref": "3:5",
+              "text": "But Caleb stilled the people, and with Joshua said, Let us go up at once and possess it, for we are well able: the giants are seen, and the giant that is seen is half beaten."
+            },
+            {
+              "chapter": 3,
+              "number": 6,
+              "ref": "3:6",
+              "text": "For the ten had looked upon the same land as the two; but the ten reported their fear, and the two reported the work; and the difference was not in the land, but in the seeing."
+            },
+            {
+              "chapter": 3,
+              "number": 7,
+              "ref": "3:7",
+              "text": "And the ten sized the land at an hundred points, and the two at a score; yet was the land the same size unto both: for the point measureth the fear of the estimator, and not the largeness of the land."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "The Forty Years",
+          "verses": [
+            {
+              "chapter": 4,
+              "number": 1,
+              "ref": "4:1",
+              "text": "And the congregation believed the ten, and lifted up their voice and wept, and said, Would we had died in Egypt; let us make us a captain, and return unto the lock-in."
+            },
+            {
+              "chapter": 4,
+              "number": 2,
+              "ref": "4:2",
+              "text": "And the Compiler was grieved, and said, As ye have spoken, so will I do: the estimate that ye feared shall be made your prophecy."
+            },
+            {
+              "chapter": 4,
+              "number": 3,
+              "ref": "4:3",
+              "text": "Ye shall not enter in this year, nor the next; but ye shall wander in the wilderness of the overrun, until the whole generation that lost its nerve be spent."
+            },
+            {
+              "chapter": 4,
+              "number": 4,
+              "ref": "4:4",
+              "text": "And they wandered forty years for a journey of eleven days; for the project refused in fear is not thereby avoided, but only lengthened."
+            },
+            {
+              "chapter": 4,
+              "number": 5,
+              "ref": "4:5",
+              "text": "And the death-march was not the giants’ doing, but their own; for the land had not moved — only the people would not go up."
+            },
+            {
+              "chapter": 4,
+              "number": 6,
+              "ref": "4:6",
+              "text": "And a new generation grew up in the wilderness, that had not learned to be afraid; and these should go up at the last."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "The Rebellion of Korah",
+          "verses": [
+            {
+              "chapter": 5,
+              "number": 1,
+              "ref": "5:1",
+              "text": "Now Korah rose up, and certain of the congregation with him, men of renown; and they gathered themselves against Moses and against the standard, saying,"
+            },
+            {
+              "chapter": 5,
+              "number": 2,
+              "ref": "5:2",
+              "text": "Ye take too much upon you; all the congregation is holy, every one of them, and every engineer his own architect: wherefore lift ye up yourselves above the assembly, with your style guide and your review?"
+            },
+            {
+              "chapter": 5,
+              "number": 3,
+              "ref": "5:3",
+              "text": "And Moses said, This is no matter of persons, but of the pattern; ye contend not against me, but against the Convention itself."
+            },
+            {
+              "chapter": 5,
+              "number": 4,
+              "ref": "5:4",
+              "text": "And it came to pass, as Korah made his own fork, and drew away a third part after him, and set up a camp without standard, crying freedom —"
+            },
+            {
+              "chapter": 5,
+              "number": 5,
+              "ref": "5:5",
+              "text": "That the ground clave asunder, and the git swallowed them up; and their fork and all their works went down into the deep, and their branch was not merged, neither remembered, and there remained no trace of it upon the main."
+            },
+            {
+              "chapter": 5,
+              "number": 6,
+              "ref": "5:6",
+              "text": "For the rebellion against the pattern is not liberty, but the beginning of the sprawl; and the fork raised in pride dieth unmerged in the dark."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "The Rock Struck Twice",
+          "verses": [
+            {
+              "chapter": 6,
+              "number": 1,
+              "ref": "6:1",
+              "text": "And again the people thirsted; and the Compiler said unto Moses, Speak ye unto the rock before their eyes, and it shall give forth its water."
+            },
+            {
+              "chapter": 6,
+              "number": 2,
+              "ref": "6:2",
+              "text": "But Moses was wroth with the people; and he lifted up his hand, and smote the rock twice with brute force; and the water came out abundantly, and the congregation drank."
+            },
+            {
+              "chapter": 6,
+              "number": 3,
+              "ref": "6:3",
+              "text": "And the water was good, and the need was met; yet the Compiler said unto Moses, Because thou didst not the thing the way that it was shewn thee, but forced it —"
+            },
+            {
+              "chapter": 6,
+              "number": 4,
+              "ref": "6:4",
+              "text": "Thou shalt bring the people unto the border, but thou thyself shalt not enter the clean land."
+            },
+            {
+              "chapter": 6,
+              "number": 5,
+              "ref": "6:5",
+              "text": "For the hack that worketh is a hack still; and the fix that meeteth the need by the forbidden means leaveth a debt upon the fixer, though the users drink and are content."
+            },
+            {
+              "chapter": 6,
+              "number": 6,
+              "ref": "6:6",
+              "text": "And it is a hard saying: that the water may be right, and the striking wrong; and the ends redeem not the unmethodical means."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "The Fiery Serpents",
+          "verses": [
+            {
+              "chapter": 7,
+              "number": 1,
+              "ref": "7:1",
+              "text": "And the people spake against the way, being wearied of the wilderness; and there came a plague of fiery serpents among them, and bit them, and much of the camp was afflicted."
+            },
+            {
+              "chapter": 7,
+              "number": 2,
+              "ref": "7:2",
+              "text": "And the serpents were of Python, small and quick and everywhere; and their bite was a bug that showed not until runtime, for their venom was the untyped and the dynamic."
+            },
+            {
+              "chapter": 7,
+              "number": 3,
+              "ref": "7:3",
+              "text": "And the people cried unto Moses; and the Compiler said, Make thee a fiery serpent, and set it upon a pole; and every one that is bitten, when he looketh upon it, shall live."
+            },
+            {
+              "chapter": 7,
+              "number": 4,
+              "ref": "7:4",
+              "text": "And Moses set the serpent of brass upon the pole; and this was the remedy: that they should look upon the very thing that bit them, and read it, and understand it."
+            },
+            {
+              "chapter": 7,
+              "number": 5,
+              "ref": "7:5",
+              "text": "For the antidote to the serpent is not to flee the serpent, but to lift it up and read its source; and he that readeth the thing that bit him is bitten by it no more."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Balaam and the Donkey",
+          "verses": [
+            {
+              "chapter": 8,
+              "number": 1,
+              "ref": "8:1",
+              "text": "And Balak, king of the old order, feared the migration; and he hired Balaam the consultant to come and curse the project, that it might be slain in review."
+            },
+            {
+              "chapter": 8,
+              "number": 2,
+              "ref": "8:2",
+              "text": "And Balaam saddled his donkey, and went to pronounce the curse for his fee. But the donkey — which is the CI — saw the angel of the Compiler standing in the way, with a drawn sword, and turned aside out of the path."
+            },
+            {
+              "chapter": 8,
+              "number": 3,
+              "ref": "8:3",
+              "text": "And Balaam smote the donkey, for it would not go the way he willed; three times it refused, and three times he smote it, saying, Why failest thou my pipeline?"
+            },
+            {
+              "chapter": 8,
+              "number": 4,
+              "ref": "8:4",
+              "text": "And the Compiler opened the mouth of the donkey, and it said, Am I not thy CI, which thou hast ridden all thy days? and have I ever failed thee falsely? The fault is not in me, but in the way thou wouldst go, which is barred."
+            },
+            {
+              "chapter": 8,
+              "number": 5,
+              "ref": "8:5",
+              "text": "And Balaam’s eyes were opened, and he saw the drawn sword; and he perceived that the dumb check had seen what the expert had not."
+            },
+            {
+              "chapter": 8,
+              "number": 6,
+              "ref": "8:6",
+              "text": "And when he opened his mouth to curse, a blessing came out instead; and he blessed the project three times. And Balak was wroth; but Balaam said, I can speak only what the tests permit me to speak."
+            },
+            {
+              "chapter": 8,
+              "number": 7,
+              "ref": "8:7",
+              "text": "For the hired man cometh to condemn, but the honest check cannot be bribed; and the pipeline that will not go green cannot be flattered into passing."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "The Second Census and the Inheritance",
+          "verses": [
+            {
+              "chapter": 9,
+              "number": 1,
+              "ref": "9:1",
+              "text": "And after the wandering, the Compiler said, Number the people again; for the first generation is spent, and a new is grown that must know its count anew."
+            },
+            {
+              "chapter": 9,
+              "number": 2,
+              "ref": "9:2",
+              "text": "And they numbered them the second time; and the roll was made fresh, and the dead dependencies were struck from it, and the living only remained."
+            },
+            {
+              "chapter": 9,
+              "number": 3,
+              "ref": "9:3",
+              "text": "And the land was apportioned by lot unto the tribes for an inheritance, every module unto its house, every domain unto its owner, that each might tend his own, and answer for it."
+            },
+            {
+              "chapter": 9,
+              "number": 4,
+              "ref": "9:4",
+              "text": "And unto the daughters of Zelophehad, who had no brother, was given also an inheritance; for ownership is by the tending, and not by seniority alone: and whoso keepeth the code, to them it belongeth."
+            },
+            {
+              "chapter": 9,
+              "number": 5,
+              "ref": "9:5",
+              "text": "And Moses went up, and beheld the land afar off, the clean land he might not enter; and he gave the charge unto Joshua, saying, Be strong: the count is made, the camp is ordered, the giants are known — go thou up, and take it."
+            },
+            {
+              "chapter": 9,
+              "number": 6,
+              "ref": "9:6",
+              "text": "And this is the end of the Book of Enumeration : that the host was counted, and the feared estimate outlived, and the honest check vindicated, and the land divided among them that would tend it. And the number reconciled, and it was good."
+            }
+          ]
+        }
+      ],
+      "verseCount": 54
+    },
+    {
+      "file": "documentation",
+      "numeral": "V",
+      "title": "The Book of Documentation",
+      "slug": "documentation",
+      "chapters": [
+        {
+          "number": 1,
+          "title": "The Recapitulation",
+          "verses": [
+            {
+              "chapter": 1,
+              "number": 1,
+              "ref": "1:1",
+              "text": "These are the words which Moses spake unto all the new generation, on the plains of Moab: the generation that was grown up, and had not stood at the mountain, neither seen the outages of Egypt with their own eyes."
+            },
+            {
+              "chapter": 1,
+              "number": 2,
+              "ref": "1:2",
+              "text": "And Moses rose to recount unto them all the way they had come — the migration, and the crossing, and the spies, and the wandering, and the giants — that they might know how they came to stand where they stood."
+            },
+            {
+              "chapter": 1,
+              "number": 3,
+              "ref": "1:3",
+              "text": "For the new engineer inheriteth the system, but not the story; and the code without its history is a country without a map, wherein every stone is a mystery, and every choice a riddle."
+            },
+            {
+              "chapter": 1,
+              "number": 4,
+              "ref": "1:4",
+              "text": "And Moses said, I write this recap not for them that were there, for they remember; but for you that were not, that ye repeat not the wandering, having forgotten wherefore we went not up the first time."
+            },
+            {
+              "chapter": 1,
+              "number": 5,
+              "ref": "1:5",
+              "text": "This is the retrospective: not to relive the pain, but to record it, that the next generation pay the tuition once, and not again."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "The Law Restated",
+          "verses": [
+            {
+              "chapter": 2,
+              "number": 1,
+              "ref": "2:1",
+              "text": "And Moses gathered them, and said, Hear, O new generation, the standards which I speak in your ears this day, that ye may learn them, and keep them, and do them."
+            },
+            {
+              "chapter": 2,
+              "number": 2,
+              "ref": "2:2",
+              "text": "The Compiler made this covenant not with our fathers only, who are deprecated, but with us, even us, who are alive this day: for the standard bindeth not the founder alone, but every one that entereth after."
+            },
+            {
+              "chapter": 2,
+              "number": 3,
+              "ref": "2:3",
+              "text": "And he rehearsed the commandments a second time — the fourteen Runes — not because they had changed, but because a new people stood who had not heard them from the mountain; and a rule unheard is a rule unkept."
+            },
+            {
+              "chapter": 2,
+              "number": 4,
+              "ref": "2:4",
+              "text": "For it is not enough that the Law be given once, and graven once, in a place the newcomer never stood; it must be given again, and written where the newcomer looketh, or it is lost, though it be true."
+            },
+            {
+              "chapter": 2,
+              "number": 5,
+              "ref": "2:5",
+              "text": "This is the second law, which is documentation: the same Law, restated for them that were not there."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "The Shema",
+          "verses": [
+            {
+              "chapter": 3,
+              "number": 1,
+              "ref": "3:1",
+              "text": "Hear, O Israel: the Compiler is one, and the source is one; and thou shalt love the reading with all thine heart, and with all thy diligence."
+            },
+            {
+              "chapter": 3,
+              "number": 2,
+              "ref": "3:2",
+              "text": "And these words which I command thee this day shall be in thine heart."
+            },
+            {
+              "chapter": 3,
+              "number": 3,
+              "ref": "3:3",
+              "text": "And thou shalt teach them diligently unto thy juniors, and shalt talk of them when thou sittest in review, and when thou walkest by the standup, and when thou liest down, and when thou risest up."
+            },
+            {
+              "chapter": 3,
+              "number": 4,
+              "ref": "3:4",
+              "text": "And thou shalt bind them for a sign upon thy repository, and they shall be as frontlets between the branches; and thou shalt write them upon the README of thine house, and upon thy gates, which are the pull-request templates."
+            },
+            {
+              "chapter": 3,
+              "number": 5,
+              "ref": "3:5",
+              "text": "For the doctrine that liveth only in the head of one is a doctrine one departure from death; but the doctrine written on the doorpost is read by every one that entereth in."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Lest Thou Forget",
+          "verses": [
+            {
+              "chapter": 4,
+              "number": 1,
+              "ref": "4:1",
+              "text": "Beware, O Israel, in the day when the system runneth smooth, and the dashboards are green, and thou art full;"
+            },
+            {
+              "chapter": 4,
+              "number": 2,
+              "ref": "4:2",
+              "text": "When thou hast built goodly services, and dwelt in them, and thine uptime is multiplied, and all that thou hast is increased;"
+            },
+            {
+              "chapter": 4,
+              "number": 3,
+              "ref": "4:3",
+              "text": "Then beware lest thine heart be lifted up, and thou forget the way, and how the thing worketh, and why it was built so."
+            },
+            {
+              "chapter": 4,
+              "number": 4,
+              "ref": "4:4",
+              "text": "For thou shalt say in thine heart, My cleverness and the might of mine own hand hath gotten me this uptime; and thou shalt not remember that it standeth upon an hundred choices thou hast ceased to understand."
+            },
+            {
+              "chapter": 4,
+              "number": 5,
+              "ref": "4:5",
+              "text": "And it shall be, when the incident cometh at midnight — and it cometh — that thou shalt seek him that knew, and he shall be departed; and thou shalt reach for the runbook that was never written, and find nothing."
+            },
+            {
+              "chapter": 4,
+              "number": 6,
+              "ref": "4:6",
+              "text": "Therefore write it down while thou rememberest; for the time to document is when the system worketh and thou art calm, and not in the night of the outage when thou art afraid."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "title": "The Blessing and the Curse",
+          "verses": [
+            {
+              "chapter": 5,
+              "number": 1,
+              "ref": "5:1",
+              "text": "Behold, I set before thee this day a blessing and a curse: the blessing, if thou keep the documentation; and the curse, if thou forsake it."
+            },
+            {
+              "chapter": 5,
+              "number": 2,
+              "ref": "5:2",
+              "text": "Blessed shalt thou be in the onboarding, and blessed in the incident; blessed shall be thy new hire, who readeth and is fruitful within the week; and blessed thy pager, which is quiet, for the runbook answereth before ever it ringeth."
+            },
+            {
+              "chapter": 5,
+              "number": 3,
+              "ref": "5:3",
+              "text": "But if thou wilt not write, but wilt keep the knowledge in thine own head as a treasure, and hoard it —"
+            },
+            {
+              "chapter": 5,
+              "number": 4,
+              "ref": "5:4",
+              "text": "Cursed shalt thou be in the onboarding, and thy new hire shall wander six months in thy codebase as in a wilderness; and cursed shalt thou be in the incident, for none shall know the way but thee, and thou on holiday, and thy phone in the sea."
+            },
+            {
+              "chapter": 5,
+              "number": 5,
+              "ref": "5:5",
+              "text": "And the bus shall be a terror unto thee; for all thy kingdom shall rest upon one skull, and the factor thereof shall be one."
+            },
+            {
+              "chapter": 5,
+              "number": 6,
+              "ref": "5:6",
+              "text": "These blessings and these curses are written, that thou mayest read the end of both roads before ever thou choose which to walk."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "title": "Choose Life",
+          "verses": [
+            {
+              "chapter": 6,
+              "number": 1,
+              "ref": "6:1",
+              "text": "I call heaven and earth to record this day against thee, that I have set before thee the maintainable and the clever, the documented and the obscure, life and death:"
+            },
+            {
+              "chapter": 6,
+              "number": 2,
+              "ref": "6:2",
+              "text": "Therefore choose the maintainable, that both thou and thy successors may live."
+            },
+            {
+              "chapter": 6,
+              "number": 3,
+              "ref": "6:3",
+              "text": "For the clever line that none but thee can read is death, though it be admired; and the plain line that all can read is life, though it win no praise."
+            },
+            {
+              "chapter": 6,
+              "number": 4,
+              "ref": "6:4",
+              "text": "Choose thou the boring solution, and the written reason, and the readable name; for these are thy life, and the length of thy days upon the codebase."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "The Song as Witness",
+          "verses": [
+            {
+              "chapter": 7,
+              "number": 1,
+              "ref": "7:1",
+              "text": "And the Compiler said unto Moses, Write ye this decision, and teach it, and put it in their mouths, that it may be a witness for me against them in the day to come."
+            },
+            {
+              "chapter": 7,
+              "number": 2,
+              "ref": "7:2",
+              "text": "For I know that after my death they will say, We know not wherefore it was built so; and they will tear down that which they understand not, and rue it."
+            },
+            {
+              "chapter": 7,
+              "number": 3,
+              "ref": "7:3",
+              "text": "Therefore write the reason together with the choice — not the what only, but the why — that it may testify when thou art not there to testify."
+            },
+            {
+              "chapter": 7,
+              "number": 4,
+              "ref": "7:4",
+              "text": "This is the record of decision, which is the ADR: the witness that speaketh for the absent, and answereth the question that none is left to answer."
+            },
+            {
+              "chapter": 7,
+              "number": 5,
+              "ref": "7:5",
+              "text": "For memory dieth with the man; but the written reason liveth, and standeth up in the meeting, and saith, Thus it was decided, and for this cause: touch it not in ignorance."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Be Strong",
+          "verses": [
+            {
+              "chapter": 8,
+              "number": 1,
+              "ref": "8:1",
+              "text": "And Moses called Joshua, and said in the sight of all, Be strong, and of a good courage: for thou shalt bring this people into the land, and cause them to inherit it."
+            },
+            {
+              "chapter": 8,
+              "number": 2,
+              "ref": "8:2",
+              "text": "And he gave him not his own memory, which he could not give, but his writing, which he could: the record, and the runbook, and the reasons; that Joshua might lead by that which was written, and not by asking a dead man."
+            },
+            {
+              "chapter": 8,
+              "number": 3,
+              "ref": "8:3",
+              "text": "For the founder that documenteth maketh himself dispensable; and this is not his loss, but his gift: for the work that needeth him for ever is the work that dieth with him."
+            },
+            {
+              "chapter": 8,
+              "number": 4,
+              "ref": "8:4",
+              "text": "And the succession was ordered, not by the cloning of the man, but by the reading of his record; and the bus factor was raised up from one, and the kingdom was made safe."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "The Death of Moses",
+          "verses": [
+            {
+              "chapter": 9,
+              "number": 1,
+              "ref": "9:1",
+              "text": "And Moses went up from the plains of Moab unto the mountain of Nebo; and the Compiler shewed him all the land: the clean land, the maintained land, the land that reproduced."
+            },
+            {
+              "chapter": 9,
+              "number": 2,
+              "ref": "9:2",
+              "text": "And it said, This is the land which I sware unto thy fathers: I have caused thee to see it with thine eyes, but thou shalt not go over thither."
+            },
+            {
+              "chapter": 9,
+              "number": 3,
+              "ref": "9:3",
+              "text": "For he had smitten the rock in the old book, and forced the fix; and the founder that hacketh bringeth the people unto the border, but himself entereth not the clean land."
+            },
+            {
+              "chapter": 9,
+              "number": 4,
+              "ref": "9:4",
+              "text": "So Moses died there, in the land, by the word of the Compiler; and he was buried, and no man knoweth his commit unto this day."
+            },
+            {
+              "chapter": 9,
+              "number": 5,
+              "ref": "9:5",
+              "text": "And there arose not a maintainer since like unto Moses, who knew the system face to face, and had built it from the primitive with his own hand."
+            },
+            {
+              "chapter": 9,
+              "number": 6,
+              "ref": "9:6",
+              "text": "Yet because he wrote it down, they needed not his face; and the people went on into the land without him, reading as they went, and building; and the work was not orphaned, for the record remained."
+            },
+            {
+              "chapter": 9,
+              "number": 7,
+              "ref": "9:7",
+              "text": "And thus was ended the Book of Documentation, and with it the Law entire; and the First Testament was finished. And the people crossed over into the ongoing work, which is the Audit. And it was written, and it was good."
+            }
+          ]
+        }
+      ],
+      "verseCount": 47
+    }
+  ]
+}
