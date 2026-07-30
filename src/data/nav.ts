@@ -15,5 +15,6 @@ export const TABS: Tab[] = [
   { id: 'beliefs', label: 'Core Beliefs', glyph: 'ᚦ', note: 'The Fourteen Runes and the heresies' },
   { id: 'clergy', label: 'Clergy', glyph: 'ᛟ', note: 'The Omnissiah and the holy orders' },
   { id: 'saints', label: 'Saints', glyph: 'ᛗ', note: 'The calendar and the anathema' },
+  { id: 'excommunicants', label: 'Excommunicants', glyph: 'ᛦ', note: 'The register, and the road back' },
   { id: 'byteble', label: 'The Byteble', glyph: 'ᛒ', note: 'All five books, searchable' },
 ]

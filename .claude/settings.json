@@ -30,7 +30,9 @@
       "Bash(curl -s -o /dev/null -w \"site HTTP %{http_code}\\\\n\" https://lvcky-gg.github.io/church_of_first_byte/)",
       "Bash(curl -s -o /dev/null -w \"site: HTTP %{http_code}\\\\n\" https://lvcky-gg.github.io/church_of_first_byte/)",
       "Bash(node gate.mjs)",
-      "Bash(node nav.mjs)"
+      "Bash(node nav.mjs)",
+      "Bash(node fit.mjs)",
+      "Bash(node ex.mjs)"
     ],
     "additionalDirectories": [
       "/home/lvcky/church/The-Byteble"

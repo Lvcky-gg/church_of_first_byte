@@ -9,6 +9,7 @@ import byteble from '../data/byteble.json'
 import { CREED, MOTTO, RUNES } from '../data/doctrine'
 import { SAINTS } from '../data/saints'
 import { ORDERS } from '../data/clergy'
+import { EXCOMMUNICANTS } from '../data/excommunicants'
 
 const verseCount = computed(() =>
   byteble.books.reduce((n, b) => n + b.verseCount, 0),
@@ -46,6 +47,13 @@ const GATES = [
     label: 'The Saints',
     line: 'The calendar of the venerated, and the order of the anathema.',
     stat: `${SAINTS.length} canonised`,
+  },
+  {
+    to: 'excommunicants',
+    glyph: 'ᛦ',
+    label: 'Excommunicants',
+    line: 'The register of the cut off, each with a road back.',
+    stat: `${EXCOMMUNICANTS.length} cut off`,
   },
   {
     to: 'byteble',

@@ -9,6 +9,7 @@ import SanctumView from './views/SanctumView.vue'
 import BeliefsView from './views/BeliefsView.vue'
 import ClergyView from './views/ClergyView.vue'
 import SaintsView from './views/SaintsView.vue'
+import ExcommunicantsView from './views/ExcommunicantsView.vue'
 import BytebleView from './views/BytebleView.vue'
 import LodgeView from './views/LodgeView.vue'
 import NotFoundView from './views/NotFoundView.vue'
@@ -18,6 +19,7 @@ const VIEWS = {
   beliefs: BeliefsView,
   clergy: ClergyView,
   saints: SaintsView,
+  excommunicants: ExcommunicantsView,
   byteble: BytebleView,
   // Unlisted: absent from TABS on purpose, reached only by the word.
   lodge: LodgeView,
