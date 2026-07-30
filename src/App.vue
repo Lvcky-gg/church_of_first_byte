@@ -1,22 +1,25 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onUnmounted, ref, watch } from 'vue'
 import { view, href } from './router'
-import seal from './assets/church.png'
+import TheSigil from './components/TheSigil.vue'
 import SanctumView from './views/SanctumView.vue'
 import BeliefsView from './views/BeliefsView.vue'
+import ClergyView from './views/ClergyView.vue'
 import SaintsView from './views/SaintsView.vue'
 import BytebleView from './views/BytebleView.vue'
 
 const TABS = [
-  { id: 'sanctum', label: 'Sanctum', glyph: 'ᛞ' },
-  { id: 'beliefs', label: 'Core Beliefs', glyph: 'ᚦ' },
-  { id: 'saints', label: 'Saints', glyph: 'ᛗ' },
-  { id: 'byteble', label: 'The Byteble', glyph: 'ᛒ' },
+  { id: 'sanctum', label: 'Sanctum', glyph: 'ᛞ', note: 'The seal, the creed, the canon' },
+  { id: 'beliefs', label: 'Core Beliefs', glyph: 'ᚦ', note: 'The Fourteen Runes and the heresies' },
+  { id: 'clergy', label: 'Clergy', glyph: 'ᛟ', note: 'The Omnissiah and the holy orders' },
+  { id: 'saints', label: 'Saints', glyph: 'ᛗ', note: 'The calendar and the anathema' },
+  { id: 'byteble', label: 'The Byteble', glyph: 'ᛒ', note: 'All five books, searchable' },
 ] as const
 
 const VIEWS = {
   sanctum: SanctumView,
   beliefs: BeliefsView,
+  clergy: ClergyView,
   saints: SaintsView,
   byteble: BytebleView,
 }
@@ -26,6 +29,26 @@ type ViewId = keyof typeof VIEWS
 const current = computed<ViewId>(() =>
   view.value in VIEWS ? (view.value as ViewId) : 'sanctum',
 )
+
+/* ---- the narrow-screen drawer ------------------------------------------ */
+const menuOpen = ref(false)
+
+// Any navigation closes it, including a back-button hash change.
+watch(view, () => (menuOpen.value = false))
+
+// Hold the page still behind the drawer, and give it back on close.
+watch(menuOpen, (open) => {
+  document.body.style.overflow = open ? 'hidden' : ''
+})
+
+const onKey = (e: KeyboardEvent) => {
+  if (e.key === 'Escape') menuOpen.value = false
+}
+window.addEventListener('keydown', onKey)
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKey)
+  document.body.style.overflow = ''
+})
 </script>
 
 <template>
@@ -34,7 +57,7 @@ const current = computed<ViewId>(() =>
   <header class="head">
     <div class="head__inner shell">
       <a class="mark" :href="href('sanctum')" aria-label="The Church of the First Byte — sanctum">
-        <img class="mark__seal" :src="seal" alt="" width="52" height="52" />
+        <TheSigil class="mark__sigil" :size="40" />
         <span class="mark__words">
           <span class="mark__line">The Church of</span>
           <span class="mark__line mark__line--em">The First Byte</span>
@@ -54,8 +77,45 @@ const current = computed<ViewId>(() =>
           <span class="tab__label">{{ tab.label }}</span>
         </a>
       </nav>
+
+      <button
+        class="burger"
+        :class="{ 'burger--on': menuOpen }"
+        :aria-expanded="menuOpen"
+        aria-controls="drawer-nav"
+        :aria-label="menuOpen ? 'Close the menu' : 'Open the menu'"
+        @click="menuOpen = !menuOpen"
+      >
+        <span class="burger__bars" aria-hidden="true"><i /><i /><i /></span>
+        <span class="burger__word">{{ menuOpen ? 'Close' : 'Menu' }}</span>
+      </button>
     </div>
+
+    <Transition name="drawer">
+      <nav v-if="menuOpen" id="drawer-nav" class="drawer" aria-label="Primary">
+        <a
+          v-for="tab in TABS"
+          :key="tab.id"
+          class="drawer__link"
+          :class="{ 'drawer__link--on': current === tab.id }"
+          :href="href(tab.id)"
+          :aria-current="current === tab.id ? 'page' : undefined"
+          @click="menuOpen = false"
+        >
+          <span class="drawer__glyph" aria-hidden="true">{{ tab.glyph }}</span>
+          <span class="drawer__body">
+            <span class="drawer__label">{{ tab.label }}</span>
+            <span class="drawer__note">{{ tab.note }}</span>
+          </span>
+        </a>
+        <p class="drawer__motto">Primitive is holy · Dependency is corruption</p>
+      </nav>
+    </Transition>
   </header>
+
+  <Transition name="fade">
+    <div v-if="menuOpen" class="scrim" @click="menuOpen = false" />
+  </Transition>
 
   <main id="nave">
     <component :is="VIEWS[current]" />
@@ -99,7 +159,7 @@ const current = computed<ViewId>(() =>
 .head {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 30;
   background: linear-gradient(180deg, rgba(4, 3, 2, 0.96), rgba(8, 7, 6, 0.86));
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule-faint);
@@ -122,11 +182,9 @@ const current = computed<ViewId>(() =>
   flex-shrink: 0;
 }
 
-.mark__seal {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(169, 141, 87, 0.22));
+.mark__sigil {
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 10px rgba(169, 141, 87, 0.28));
 }
 
 .mark__words {
@@ -149,23 +207,15 @@ const current = computed<ViewId>(() =>
 .tabs {
   display: flex;
   align-items: stretch;
-  gap: 0.25rem;
-  overflow-x: auto;
-  scrollbar-width: none;
-  margin-right: -1.6rem;
-  padding-right: 1.6rem;
-}
-
-.tabs::-webkit-scrollbar {
-  display: none;
+  gap: 0.15rem;
 }
 
 .tab {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 0.95rem;
+  gap: 0.45rem;
+  padding: 0.75rem 0.8rem;
   white-space: nowrap;
   text-decoration: none;
   color: var(--bone-faint);
@@ -208,11 +258,182 @@ const current = computed<ViewId>(() =>
 .tab--on::after {
   content: '';
   position: absolute;
-  left: 0.95rem;
-  right: 0.95rem;
+  left: 0.8rem;
+  right: 0.8rem;
   bottom: -1px;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--brass), transparent);
+}
+
+/* burger — hidden until the tabs no longer fit ---------------------------- */
+.burger {
+  display: none;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 0.9rem;
+  background: rgba(8, 7, 6, 0.5);
+  border: 1px solid var(--rule-faint);
+  color: var(--bone-dim);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    color 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.burger--on {
+  color: var(--bone);
+  border-color: var(--rule);
+  background: linear-gradient(180deg, rgba(140, 31, 26, 0.24), rgba(34, 29, 23, 0.5));
+}
+
+.burger__bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16px;
+  height: 12px;
+}
+
+.burger__bars i {
+  display: block;
+  height: 1.5px;
+  background: var(--brass);
+  transition:
+    transform 0.24s ease,
+    opacity 0.18s ease;
+  transform-origin: center;
+}
+
+.burger--on .burger__bars i {
+  background: var(--ember);
+}
+
+.burger--on .burger__bars i:nth-child(1) {
+  transform: translateY(5.25px) rotate(45deg);
+}
+
+.burger--on .burger__bars i:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--on .burger__bars i:nth-child(3) {
+  transform: translateY(-5.25px) rotate(-45deg);
+}
+
+/* drawer ----------------------------------------------------------------- */
+.drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  max-height: calc(100dvh - 100%);
+  overflow-y: auto;
+  padding: 0.6rem 1.2rem 1.6rem;
+  background: linear-gradient(180deg, rgba(14, 12, 10, 0.99), rgba(4, 3, 2, 0.99));
+  border-bottom: 1px solid var(--rule);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.72);
+}
+
+.drawer__link {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.05rem 0.8rem;
+  border-bottom: 1px solid var(--rule-faint);
+  text-decoration: none;
+  transition: background 0.18s ease;
+}
+
+.drawer__link:active {
+  background: rgba(169, 141, 87, 0.07);
+}
+
+.drawer__link--on {
+  background: linear-gradient(90deg, rgba(140, 31, 26, 0.22), transparent);
+  box-shadow: inset 2px 0 0 var(--ember);
+}
+
+.drawer__glyph {
+  font-size: 1.5rem;
+  color: var(--brass-dim);
+  text-align: center;
+}
+
+.drawer__link--on .drawer__glyph {
+  color: var(--ember);
+}
+
+.drawer__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.drawer__label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+}
+
+.drawer__link--on .drawer__label {
+  color: var(--bone);
+}
+
+.drawer__note {
+  font-size: 0.85rem;
+  color: var(--bone-faint);
+  line-height: 1.5;
+}
+
+.drawer__motto {
+  margin: 1.6rem 0 0;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+}
+
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  background: rgba(4, 3, 2, 0.72);
+  backdrop-filter: blur(2px);
+}
+
+.drawer-enter-active,
+.drawer-leave-active {
+  transition:
+    transform 0.24s ease,
+    opacity 0.24s ease;
+}
+
+.drawer-enter-from,
+.drawer-leave-to {
+  transform: translateY(-0.8rem);
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.24s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 /* foot ------------------------------------------------------------------- */
@@ -246,22 +467,34 @@ const current = computed<ViewId>(() =>
   line-height: 1.75;
 }
 
-@media (max-width: 860px) {
-  .head__inner {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.2rem;
-    padding-block: 0.7rem;
-  }
-
+/* Five tabs plus the wordmark stop fitting a little under 1000px; below that
+   the bar stays one slim row and the destinations move into the drawer. */
+@media (max-width: 1000px) {
   .tabs {
-    margin-inline: -1.6rem;
-    padding-inline: 1.6rem;
+    display: none;
   }
 
-  .mark__seal {
-    width: 42px;
-    height: 42px;
+  .burger {
+    display: flex;
+  }
+
+  .head__inner {
+    min-height: 3.9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .burger__word {
+    display: none;
+  }
+
+  .burger {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .mark__words {
+    font-size: 0.55rem;
+    letter-spacing: 0.24em;
   }
 }
 </style>

@@ -5,6 +5,7 @@ import seal from '../assets/church.png'
 import byteble from '../data/byteble.json'
 import { CREED, MOTTO, RUNES } from '../data/doctrine'
 import { SAINTS } from '../data/saints'
+import { ORDERS } from '../data/clergy'
 
 const verseCount = computed(() =>
   byteble.books.reduce((n, b) => n + b.verseCount, 0),
@@ -20,6 +21,13 @@ const GATES = [
     label: 'Core Beliefs',
     line: 'The Fourteen Runes, the creed, and the six heresies.',
     stat: `${RUNES.length} runes`,
+  },
+  {
+    to: 'clergy',
+    glyph: 'ᛟ',
+    label: 'The Clergy',
+    line: 'The Omnissiah, the holy orders, and the two ordained machines.',
+    stat: `${ORDERS.length + 1} offices`,
   },
   {
     to: 'saints',
@@ -109,8 +117,22 @@ const GATES = [
 <style scoped>
 /* hero ------------------------------------------------------------------- */
 .hero {
+  position: relative;
   padding: 3.4rem 0 1rem;
   text-align: center;
+  /* the seal is painted on solid black; we lay our own black beneath it and
+     screen the art on top, so no rectangle shows against the vignette */
+  isolation: isolate;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(52rem 34rem at 50% 26%, rgba(140, 31, 26, 0.18), transparent 66%),
+    linear-gradient(180deg, var(--void-deep) 0%, var(--void-deep) 72%, transparent 100%);
 }
 
 .hero__inner {
@@ -120,23 +142,22 @@ const GATES = [
 }
 
 .hero__seal {
-  width: min(28rem, 82vw);
+  width: min(30rem, 88vw);
   height: auto;
   margin-bottom: 2rem;
-  filter: drop-shadow(0 0 46px rgba(140, 31, 26, 0.24))
-    drop-shadow(0 0 18px rgba(169, 141, 87, 0.16));
+  mix-blend-mode: screen;
   animation: breathe 9s ease-in-out infinite;
 }
 
 @keyframes breathe {
+
   0%,
   100% {
-    filter: drop-shadow(0 0 46px rgba(140, 31, 26, 0.2))
-      drop-shadow(0 0 18px rgba(169, 141, 87, 0.14));
+    opacity: 0.94;
   }
+
   50% {
-    filter: drop-shadow(0 0 62px rgba(140, 31, 26, 0.34))
-      drop-shadow(0 0 26px rgba(169, 141, 87, 0.22));
+    opacity: 1;
   }
 }
 

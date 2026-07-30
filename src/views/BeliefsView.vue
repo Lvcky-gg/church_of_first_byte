@@ -171,6 +171,11 @@ const toggle = (ordinal: string) => {
   margin-bottom: 2rem;
 }
 
+.section__note .cite {
+  display: block;
+  margin-top: 0.5rem;
+}
+
 /* creed ------------------------------------------------------------------ */
 .creed {
   max-width: 44rem;

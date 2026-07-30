@@ -82,6 +82,40 @@ const results = computed<Hit[]>(() => {
   return INDEX.filter((h) => h.plain.toLowerCase().includes(q)).slice(0, 120)
 })
 
+/* Chapter titles are not verses, but they are what people actually remember —
+   "the golden calf", "the ten outages" — so they are matched separately. */
+interface ChapterHit {
+  slug: string
+  book: string
+  numeral: string
+  number: number
+  title: string
+}
+
+const chapterResults = computed<ChapterHit[]>(() => {
+  if (!searching.value) return []
+  const q = query.value.trim().toLowerCase()
+  return books.flatMap((b) =>
+    b.chapters
+      .filter(
+        (c) =>
+          c.title.toLowerCase().includes(q) ||
+          `${b.title} ${c.number}`.toLowerCase().includes(q),
+      )
+      .map((c) => ({
+        slug: b.slug,
+        book: b.title,
+        numeral: b.numeral,
+        number: c.number,
+        title: c.title,
+      })),
+  )
+})
+
+const hasAnyResult = computed(
+  () => results.value.length > 0 || chapterResults.value.length > 0,
+)
+
 const escapeHtml = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
@@ -146,7 +180,7 @@ watch(book, (b) => (openBook.value = b.slug))
             placeholder="Search all 345 verses…"
             autocomplete="off"
           />
-          <span class="search__glyph" aria-hidden="true">ᛝ</span>
+          <span class="search__glyph" aria-hidden="true">ᛉ</span>
         </div>
 
         <nav class="toc" aria-label="Books of the Byteble">
@@ -189,9 +223,22 @@ watch(book, (b) => (openBook.value = b.slug))
             “{{ query.trim() }}”
           </p>
 
-          <p v-if="!results.length" class="results__none scripture">
+          <p v-if="!hasAnyResult" class="results__none scripture">
             And they searched the land forty days, and found nothing therein.
           </p>
+
+          <!-- chapters whose titles match -->
+          <ul v-if="chapterResults.length" class="chapter-hits">
+            <li v-for="c in chapterResults" :key="c.slug + c.number">
+              <a class="chapter-hit" :href="href('byteble', c.slug, c.number)" @click="query = ''">
+                <span class="chapter-hit__tag cite">Chapter</span>
+                <span class="chapter-hit__title">{{ c.title }}</span>
+                <span class="chapter-hit__where cite">
+                  {{ c.book.replace('The Book of ', '') }} {{ c.number }}
+                </span>
+              </a>
+            </li>
+          </ul>
 
           <ul class="results">
             <li v-for="hit in results" :key="hit.slug + hit.ref">
@@ -530,6 +577,44 @@ watch(book, (b) => (openBook.value = b.slug))
 .results__none {
   color: var(--bone-faint);
   font-size: 1.02rem;
+}
+
+.chapter-hits {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 50rem;
+}
+
+.chapter-hit {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 0.85rem 1.1rem;
+  text-decoration: none;
+  border: 1px solid var(--rule-faint);
+  background: linear-gradient(90deg, rgba(140, 31, 26, 0.14), transparent);
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.chapter-hit:hover {
+  border-color: var(--rule);
+  background: linear-gradient(90deg, rgba(140, 31, 26, 0.24), rgba(169, 141, 87, 0.05));
+}
+
+.chapter-hit__tag {
+  color: var(--ember);
+}
+
+.chapter-hit__title {
+  color: var(--bone);
+  font-size: 1.05rem;
+  flex: 1;
 }
 
 .results {

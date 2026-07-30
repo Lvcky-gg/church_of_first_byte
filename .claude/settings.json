@@ -4,7 +4,16 @@
       "Bash(sed -n '/Chapter 5/,/Chapter 7/p' migration | head -40)",
       "Bash(node scripts/parse-byteble.mjs)",
       "Bash(npm run *)",
-      "Bash(npx playwright *)"
+      "Bash(npx playwright *)",
+      "Bash(npm i *)",
+      "Bash(PLAYWRIGHT_BROWSERS_PATH=0 node shot.mjs)",
+      "Bash(node shot.mjs)",
+      "Bash(node glyphs.mjs)",
+      "Bash(node crop.mjs)",
+      "Bash(node -e ' *)",
+      "Bash(node interact.mjs)",
+      "Bash(sed -i \"s/await page.fill\\('#byteble-search', 'golden calf'\\)/await page.fill\\('#byteble-search', 'calf'\\)/\" interact.mjs)",
+      "Bash(pkill -f \"vite --port 5177\")"
     ],
     "additionalDirectories": [
       "/home/lvcky/church/The-Byteble"

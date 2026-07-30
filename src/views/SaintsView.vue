@@ -343,6 +343,11 @@ const shown = computed(() =>
   margin-bottom: 2rem;
 }
 
+.section__note .cite {
+  display: block;
+  margin-top: 0.5rem;
+}
+
 .anathema {
   list-style: none;
   margin: 0;
