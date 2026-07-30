@@ -18,7 +18,16 @@
       "Bash(git clone *)",
       "Bash(echo \"exit code: $?\")",
       "Bash(git rm *)",
-      "Bash(git submodule *)"
+      "Bash(git submodule *)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(git ls-remote *)",
+      "Bash(git fetch *)",
+      "Bash(git ls-tree *)",
+      "Bash(grep -E \"^\\\\.\\(gitmodules|nojekyll\\)$\")",
+      "Bash(curl -s -o /dev/null -w \"api HTTP %{http_code}\\\\n\" https://api.github.com/repos/Lvcky-gg/church_of_first_byte)",
+      "Bash(curl -s https://api.github.com/repos/Lvcky-gg/church_of_first_byte)",
+      "Bash(curl -s -o /dev/null -w \"site HTTP %{http_code}\\\\n\" https://lvcky-gg.github.io/church_of_first_byte/)"
     ],
     "additionalDirectories": [
       "/home/lvcky/church/The-Byteble"
