@@ -1,20 +1,17 @@
 <script setup lang="ts">
 import { computed, onUnmounted, ref, watch } from 'vue'
-import { view, href } from './router'
+import { view, route, href, go } from './router'
+import { hasSpoken } from './gate'
+import { TABS } from './data/nav'
+import byteble from './data/byteble.json'
 import TheSigil from './components/TheSigil.vue'
 import SanctumView from './views/SanctumView.vue'
 import BeliefsView from './views/BeliefsView.vue'
 import ClergyView from './views/ClergyView.vue'
 import SaintsView from './views/SaintsView.vue'
 import BytebleView from './views/BytebleView.vue'
-
-const TABS = [
-  { id: 'sanctum', label: 'Sanctum', glyph: 'ᛞ', note: 'The seal, the creed, the canon' },
-  { id: 'beliefs', label: 'Core Beliefs', glyph: 'ᚦ', note: 'The Fourteen Runes and the heresies' },
-  { id: 'clergy', label: 'Clergy', glyph: 'ᛟ', note: 'The Omnissiah and the holy orders' },
-  { id: 'saints', label: 'Saints', glyph: 'ᛗ', note: 'The calendar and the anathema' },
-  { id: 'byteble', label: 'The Byteble', glyph: 'ᛒ', note: 'All five books, searchable' },
-] as const
+import LodgeView from './views/LodgeView.vue'
+import NotFoundView from './views/NotFoundView.vue'
 
 const VIEWS = {
   sanctum: SanctumView,
@@ -22,12 +19,44 @@ const VIEWS = {
   clergy: ClergyView,
   saints: SaintsView,
   byteble: BytebleView,
+  // Unlisted: absent from TABS on purpose, reached only by the word.
+  lodge: LodgeView,
+  notfound: NotFoundView,
 }
 
 type ViewId = keyof typeof VIEWS
 
-const current = computed<ViewId>(() =>
-  view.value in VIEWS ? (view.value as ViewId) : 'sanctum',
+// The order is barred to anyone who has not spoken the word in this tab —
+// a pasted link, a shared URL, or a fresh tab resolves to the sanctum instead.
+const barred = computed(() => view.value === 'lodge' && !hasSpoken.value)
+
+// A scripture address is only real if the book and the chapter both exist.
+// `#/byteble` alone is fine — it opens at the beginning.
+const bytebleAddressIsReal = () => {
+  const [, slug, chapter] = route.value
+  if (!slug) return true
+
+  const book = byteble.books.find((b) => b.slug === slug)
+  if (!book) return false
+  if (chapter === undefined) return true
+
+  return book.chapters.some((c) => String(c.number) === chapter)
+}
+
+const current = computed<ViewId>(() => {
+  if (barred.value) return 'sanctum'
+  if (!(view.value in VIEWS)) return 'notfound'
+  if (view.value === 'byteble' && !bytebleAddressIsReal()) return 'notfound'
+  return view.value as ViewId
+})
+
+// Take the address out of the bar too, so the route leaves no trace to retry.
+watch(
+  barred,
+  (isBarred) => {
+    if (isBarred) go('sanctum')
+  },
+  { immediate: true },
 )
 
 /* ---- the narrow-screen drawer ------------------------------------------ */

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { href } from '../router'
+import { href, go } from '../router'
+import { useSecretWord } from '../composables/useSecretWord'
+import { speakTheWord } from '../gate'
+import { ORDER } from '../data/lodge'
 import seal from '../assets/church.png'
 import byteble from '../data/byteble.json'
 import { CREED, MOTTO, RUNES } from '../data/doctrine'
@@ -13,6 +16,14 @@ const verseCount = computed(() =>
 const chapterCount = computed(() =>
   byteble.books.reduce((n, b) => n + b.chapters.length, 0),
 )
+
+// Speak the word in the sanctum and the inner order opens. The listener lives
+// and dies with this view, so it is deaf everywhere else on the site; and the
+// route stays barred until the word unlatches it.
+useSecretWord(ORDER.word, () => {
+  speakTheWord()
+  go('lodge')
+})
 
 const GATES = [
   {

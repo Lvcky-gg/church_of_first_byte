@@ -27,7 +27,10 @@
       "Bash(grep -E \"^\\\\.\\(gitmodules|nojekyll\\)$\")",
       "Bash(curl -s -o /dev/null -w \"api HTTP %{http_code}\\\\n\" https://api.github.com/repos/Lvcky-gg/church_of_first_byte)",
       "Bash(curl -s https://api.github.com/repos/Lvcky-gg/church_of_first_byte)",
-      "Bash(curl -s -o /dev/null -w \"site HTTP %{http_code}\\\\n\" https://lvcky-gg.github.io/church_of_first_byte/)"
+      "Bash(curl -s -o /dev/null -w \"site HTTP %{http_code}\\\\n\" https://lvcky-gg.github.io/church_of_first_byte/)",
+      "Bash(curl -s -o /dev/null -w \"site: HTTP %{http_code}\\\\n\" https://lvcky-gg.github.io/church_of_first_byte/)",
+      "Bash(node gate.mjs)",
+      "Bash(node nav.mjs)"
     ],
     "additionalDirectories": [
       "/home/lvcky/church/The-Byteble"
