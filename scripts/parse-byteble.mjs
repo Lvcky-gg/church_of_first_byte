@@ -17,6 +17,27 @@ const CANON = [
   { file: 'documentation', numeral: 'V', title: 'The Book of Documentation', slug: 'documentation' },
 ]
 
+// The-Byteble is a submodule. A clone made without --recurse-submodules leaves
+// it empty, and there is nothing to transcribe — but src/data/byteble.json is
+// committed, so the build can still proceed on the last transcription. Only a
+// missing source AND a missing transcription is fatal.
+const havesource = CANON.every((b) => existsSync(resolve(source, b.file)))
+
+if (!havesource) {
+  if (existsSync(out)) {
+    console.warn(
+      'The-Byteble is not checked out; keeping the committed transcription.\n' +
+        'To transcribe afresh: git submodule update --init',
+    )
+    process.exit(0)
+  }
+  console.error(
+    'The-Byteble is not checked out and src/data/byteble.json is absent —\n' +
+      'there is no scripture to build from. Run: git submodule update --init',
+  )
+  process.exit(1)
+}
+
 const CHAPTER = /^(?:#{1,6}\s*)?Chapter\s+(\d+)\s*[—–-]\s*(.+?)\s*$/
 const BOOK_LINE = /^Book\s+[IVXLC]+\s*[—–-]/
 const VERSE = /^(\d+):(\d+)\s+(.*)$/
