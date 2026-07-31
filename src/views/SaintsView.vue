@@ -1,12 +1,18 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { SAINTS, ANATHEMA } from '../data/saints'
+import SaintCard from '../components/SaintCard.vue'
+import { SAINTS, SERPENT, SERPENT_ORDER, ANATHEMA } from '../data/saints'
 
-const filter = ref<'all' | 'martyrs'>('all')
+const filter = ref<'all' | 'suffered'>('all')
 
-const shown = computed(() =>
-  filter.value === 'martyrs' ? SAINTS.filter((s) => s.martyr) : SAINTS,
-)
+const total = SAINTS.length + SERPENT.length
+const sufferedCount = [...SAINTS, ...SERPENT].filter((s) => s.martyr || s.confessor).length
+
+const keep = (list: typeof SAINTS) =>
+  filter.value === 'suffered' ? list.filter((s) => s.martyr || s.confessor) : list
+
+const shownFounders = computed(() => keep(SAINTS))
+const shownSerpent = computed(() => keep(SERPENT))
 </script>
 
 <template>
@@ -15,7 +21,8 @@ const shown = computed(() =>
       <p class="epigraph">Hagiography · The calendar</p>
       <h1 class="display">The Saints</h1>
       <p class="lede">
-        Fourteen venerated, one for each Rune. They were mortal engineers and mathematicians
+        Two orders. The Fourteen built, one for each Rune; the Brazen Serpent broke, that the
+        break might be read while there was still time to mend it. All were mortal engineers
         and are named here as they were named in life. The Church canonises the work, keeps
         the feast on a true date, and pronounces anathema only upon practices — never upon
         persons.
@@ -28,57 +35,44 @@ const shown = computed(() =>
         :class="{ 'filter--on': filter === 'all' }"
         @click="filter = 'all'"
       >
-        All {{ SAINTS.length }}
+        All {{ total }}
       </button>
       <button
         class="filter"
-        :class="{ 'filter--on': filter === 'martyrs' }"
-        @click="filter = 'martyrs'"
+        :class="{ 'filter--on': filter === 'suffered' }"
+        @click="filter = 'suffered'"
       >
-        Martyrs only
+        Martyrs &amp; confessors ({{ sufferedCount }})
       </button>
     </div>
 
     <div class="rule"><span aria-hidden="true">ᛉ ᛝ ᛉ</span></div>
 
+    <h2 class="order-head">
+      <span class="order-head__glyph" aria-hidden="true">ᛗ</span> The Fourteen
+      <span class="order-head__note">One for each Rune — they that built</span>
+    </h2>
+
     <ul class="saints">
-      <li v-for="saint in shown" :key="saint.name" class="saint panel bracket" :class="{ 'saint--martyr': saint.martyr }">
-        <div class="saint__head">
-          <span class="saint__sigil" aria-hidden="true">{{ saint.sigil }}</span>
-          <div class="saint__names">
-            <h2 class="saint__name">{{ saint.name }}</h2>
-            <p class="saint__epithet">{{ saint.epithet }}</p>
-            <p class="saint__mortal">{{ saint.mortal }}</p>
-          </div>
-          <div class="saint__feast">
-            <span class="saint__feast-label">Feast</span>
-            <span class="saint__feast-date">{{ saint.feast }}</span>
-            <span v-if="saint.martyr" class="saint__martyr">Martyr</span>
-          </div>
-        </div>
+      <SaintCard v-for="saint in shownFounders" :key="saint.name" :saint="saint" />
+    </ul>
 
-        <p class="saint__life">{{ saint.life }}</p>
+    <div class="rule"><span aria-hidden="true">ᛊ</span></div>
 
-        <dl class="saint__facts">
-          <div>
-            <dt>Patron of</dt>
-            <dd>{{ saint.patronOf }}</dd>
-          </div>
-          <div>
-            <dt>Relic</dt>
-            <dd>{{ saint.relic }}</dd>
-          </div>
-          <div>
-            <dt>Kept on</dt>
-            <dd>{{ saint.feastNote }}</dd>
-          </div>
-        </dl>
+    <!-- the second order ------------------------------------------------------>
+    <h2 class="order-head">
+      <span class="order-head__glyph order-head__glyph--blood" aria-hidden="true">ᛊ</span>
+      {{ SERPENT_ORDER.name }}
+      <span class="order-head__note">They that broke, that the break might be read</span>
+    </h2>
 
-        <blockquote class="saint__verse">
-          <p class="scripture">“{{ saint.cited }}”</p>
-          <footer class="cite">{{ saint.cite }}</footer>
-        </blockquote>
-      </li>
+    <p class="order-charge">
+      {{ SERPENT_ORDER.charge }}
+      <span class="cite">{{ SERPENT_ORDER.cite }}</span>
+    </p>
+
+    <ul class="saints">
+      <SaintCard v-for="saint in shownSerpent" :key="saint.name" :saint="saint" />
     </ul>
 
     <div class="rule"><span aria-hidden="true">ᛦ</span></div>
@@ -161,161 +155,58 @@ const shown = computed(() =>
   background: linear-gradient(180deg, rgba(140, 31, 26, 0.2), rgba(34, 29, 23, 0.5));
 }
 
+/* order headings --------------------------------------------------------- */
+.order-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--bone);
+  margin-bottom: 1.4rem;
+}
+
+.order-head__glyph {
+  font-size: 1.3rem;
+  color: var(--brass);
+}
+
+.order-head__glyph--blood {
+  color: var(--ember);
+}
+
+.order-head__note {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--bone-faint);
+  text-transform: none;
+  font-style: italic;
+}
+
+.order-charge {
+  max-width: 52rem;
+  font-size: 0.96rem;
+  line-height: 1.8;
+  color: var(--bone-faint);
+  margin-bottom: 2rem;
+}
+
+.order-charge .cite {
+  display: block;
+  margin-top: 0.5rem;
+}
+
 /* saints ----------------------------------------------------------------- */
 .saints {
   list-style: none;
-  margin: 0;
+  margin: 0 0 1rem;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
   gap: 1.1rem;
-}
-
-.saint {
-  display: flex;
-  flex-direction: column;
-  padding: 1.9rem 1.7rem;
-  transition: border-color 0.2s ease;
-}
-
-.saint:hover {
-  border-color: var(--rule);
-}
-
-.saint--martyr {
-  border-color: rgba(140, 31, 26, 0.3);
-  background: linear-gradient(160deg, rgba(67, 16, 14, 0.24), rgba(8, 7, 6, 0.55));
-}
-
-.saint__head {
-  display: grid;
-  grid-template-columns: 3.2rem 1fr auto;
-  gap: 1rem;
-  align-items: start;
-  padding-bottom: 1.3rem;
-  margin-bottom: 1.3rem;
-  border-bottom: 1px solid var(--rule-faint);
-}
-
-.saint__sigil {
-  font-size: 2.1rem;
-  line-height: 1;
-  color: var(--brass);
-  text-shadow: 0 0 16px rgba(169, 141, 87, 0.34);
-}
-
-.saint--martyr .saint__sigil {
-  color: var(--ember);
-  text-shadow: 0 0 16px rgba(184, 58, 44, 0.36);
-}
-
-.saint__names {
-  min-width: 0;
-}
-
-.saint__name {
-  font-size: 1.24rem;
-  letter-spacing: 0.03em;
-  margin-bottom: 0.35rem;
-}
-
-.saint__epithet {
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--brass);
-  margin-bottom: 0.35rem;
-}
-
-.saint__mortal {
-  font-size: 0.86rem;
-  color: var(--bone-faint);
-  margin: 0;
-}
-
-.saint__feast {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.25rem;
-  text-align: right;
-}
-
-.saint__feast-label {
-  font-family: var(--mono);
-  font-size: 0.54rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--brass-deep);
-}
-
-.saint__feast-date {
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  color: var(--bone);
-  white-space: nowrap;
-}
-
-.saint__martyr {
-  font-family: var(--mono);
-  font-size: 0.54rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ember);
-  border: 1px solid rgba(184, 58, 44, 0.4);
-  padding: 0.15rem 0.4rem;
-  margin-top: 0.2rem;
-}
-
-.saint__life {
-  font-size: 0.97rem;
-  line-height: 1.8;
-  color: var(--bone-dim);
-  margin-bottom: 1.5rem;
-}
-
-.saint__facts {
-  margin: 0 0 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.saint__facts > div {
-  display: grid;
-  grid-template-columns: 5.6rem 1fr;
-  gap: 0.9rem;
-  align-items: baseline;
-}
-
-.saint__facts dt {
-  font-family: var(--mono);
-  font-size: 0.56rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--brass-deep);
-}
-
-.saint__facts dd {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--bone-dim);
-  line-height: 1.6;
-}
-
-.saint__verse {
-  margin: auto 0 0;
-  padding: 1.1rem 0 0 1.1rem;
-  border-top: 1px solid var(--rule-faint);
-  border-left: 1px solid var(--rule);
-}
-
-.saint__verse p {
-  font-size: 0.95rem;
-  line-height: 1.75;
-  margin-bottom: 0.6rem;
 }
 
 /* anathema --------------------------------------------------------------- */

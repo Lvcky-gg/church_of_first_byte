@@ -14,7 +14,10 @@ export interface Saint {
   life: string
   cite: string
   cited: string
+  /** Died for it. */
   martyr?: boolean
+  /** Suffered for it and lived — the confessor, in the old sense. */
+  confessor?: boolean
 }
 
 export interface Anathema {
@@ -216,14 +219,135 @@ export const SAINTS: Saint[] = [
     feast: 'XI JANUARY',
     feastNote: 'the 11th of January, his passion',
     patronOf: 'open access, the public record, the paywall thrown down',
-    relic: 'RSS 1.0 · the Guerilla Open Access Manifesto',
+    relic: 'RSS 1.0 · the Guerilla Open Access Manifesto, 2008',
     life:
-      'He was fourteen when he helped write the format that syndicated the web, and he spent the rest of a short life on the conviction that knowledge already paid for by the public belongs to the public. For downloading academic papers he was pursued with charges carrying decades, and he died at twenty-six. The Church names him martyr and names the prosecution the sin.',
+      'He won the ArsDigita Prize at thirteen and co-authored RSS 1.0 at fourteen, sitting in working groups with men three times his age. He built Semantic Web standards with Berners-Lee, wrote the machinery of Creative Commons with Lessig, and came to Reddit through the merger of Infogami — which made him briefly wealthy and permanently uninterested in being so. He treated code as one instrument of a larger project: that information already paid for by the public belongs to the public. For downloading journal articles too fast he was charged under the CFAA with thirteen felony counts carrying a theoretical thirty-five years, and facing trial he died at twenty-six. MIT wrote a report on its own neutrality. Aaron’s Law was introduced, and stalled. The Church names him martyr and names the prosecution the sin.',
     cite: 'Documentation 5:3',
     cited: 'If thou wilt not write, but wilt keep the knowledge in thine own head as a treasure, and hoard it —',
     martyr: true,
   },
 ]
+
+/**
+ * The second order. Where the Fourteen built, these broke — and scripture makes
+ * room for exactly that, and names the remedy:
+ *
+ *   "Make thee a fiery serpent, and set it upon a pole; and every one that is
+ *    bitten, when he looketh upon it, shall live… For the antidote to the
+ *    serpent is not to flee the serpent, but to lift it up and read its source."
+ *      — Enumeration 7:3, 7:5
+ *
+ * Several feasts here are kept on an event rather than a birth, because the day
+ * is documented and the birthday is not. The order does not invent a date.
+ */
+export const SERPENT: Saint[] = [
+  {
+    sigil: 'ᚦ',
+    name: 'St. Kevin the Persuader',
+    epithet: 'Confessor · Ghost in the Wires',
+    mortal: 'Kevin Mitnick, 1963–2023',
+    feast: 'XVI JULY',
+    feastNote: 'the 16th of July, his repose',
+    patronOf: 'the human element, the pretext, the weakest link',
+    relic: 'The Art of Deception, 2002 · Ghost in the Wires, 2011',
+    life:
+      'He proved that the strongest cryptography in the building is defeated by a confident voice on the telephone. His intrusions into DEC, Motorola, Nokia and Sun were rarely feats of mathematics; they were feats of asking. Made the FBI’s most wanted, taken in 1995, he served five years — much of it before trial, some in solitary — while “Free Kevin” was spray-painted across the young web. He came out and sold the same skill back to the defenders. The Church keeps him as confessor, not martyr: he suffered for it and lived.',
+    cite: 'Convention 2:5',
+    cited: 'The things the linter cannot see — the design, the naming, the hidden race — these are for the priest.',
+    confessor: true,
+  },
+  {
+    sigil: 'ᛊ',
+    name: 'St. Tsutomu the Tracker',
+    epithet: 'The Scientist',
+    mortal: 'Tsutomu Shimomura, b. 1964',
+    feast: 'XXV DECEMBER',
+    feastNote: 'the 25th of December, the day his own machines were taken, 1994',
+    patronOf: 'incident response, the forensic log, the answered intrusion',
+    relic: 'Takedown, 1996',
+    life:
+      'A computational physicist at San Diego who came home to find his own systems compromised by IP spoofing and TCP sequence prediction — an attack elegant enough that he said so publicly while hunting its author. He read the traces, joined the manhunt, and the cellular triangulation ended at Mitnick’s door in 1995. He is kept beside the man he caught on purpose: the pairing is the whole morality play, and neither figure means anything without the other.',
+    cite: 'Enumeration 8:5',
+    cited: 'He perceived that the dumb check had seen what the expert had not.',
+  },
+  {
+    sigil: 'ᛜ',
+    name: 'St. Bruce the Pragmatist',
+    epithet: 'Namer of Security Theater',
+    mortal: 'Bruce Schneier, b. 1963',
+    feast: 'XV JANUARY',
+    feastNote: 'the 15th of January, his nativity',
+    patronOf: 'the honest tradeoff, the threat model, the unasked question',
+    relic: 'Applied Cryptography, 1994 · Blowfish · Twofish',
+    life:
+      'He put working cryptography into practitioners’ hands when it was still treated as munitions, then spent the rest of his career explaining that the mathematics was never the hard part. Security is a process, not a product. He named security theater — the performance of safety in place of safety — and moved from ciphers to sociology, on the grounds that trust is infrastructure and infrastructure is politics. Patron of everyone who asks what, exactly, we are defending against.',
+    cite: 'Documentation 7:3',
+    cited: 'Write the reason together with the choice — not the what only, but the why.',
+  },
+  {
+    sigil: 'ᛝ',
+    name: 'St. HD of the Open Armoury',
+    epithet: 'Cartographer of the Exposed',
+    mortal: 'HD Moore, b. 1981',
+    feast: 'OCTOBER · MMIII',
+    feastNote: 'the month Metasploit was loosed, 2003',
+    patronOf: 'the shared exploit, the honest inventory, the thing you did not know you ran',
+    relic: 'The Metasploit Framework, 2003 · Project Sonar',
+    life:
+      'He took the private arsenal of the few and made it a framework anyone could read, and in doing so turned offensive security from a guild into a profession — the defenders gained more than the attackers, which was the argument and it proved correct. He later scanned the whole internet to measure what was actually exposed, and now sells asset discovery, all of it the same conviction stated three ways: you cannot secure what you cannot see, and you cannot see what you have never counted.',
+    cite: 'Enumeration 1:2',
+    cited: 'A people that knoweth not its own number is a people that shall be surprised.',
+  },
+  {
+    sigil: 'ᛇ',
+    name: 'St. Charlie of the Moving Vehicle',
+    epithet: 'Breaker of the Physical Seam',
+    mortal: 'Charlie Miller, b. 1972',
+    feast: 'XXI JULY',
+    feastNote: 'the 21st of July, the day the Jeep was taken from the road, 2015',
+    patronOf: 'the seam where software meets flesh, the recall, the demonstrated risk',
+    relic: 'The first public iPhone exploit, 2007 · the Cherokee, 2015',
+    life:
+      'An NSA analyst turned the field’s most persistent proof that a thing is only secure until someone competent is paid to care. First to break the iPhone in public, four times a winner at Pwn2Own, and then — with Valasek — he took a Jeep Cherokee off a highway from ten miles away while a journalist sat in it on purpose. Fiat Chrysler recalled 1.4 million vehicles. Automotive security exists as a discipline because two men made the danger impossible to file away.',
+    cite: 'Enumeration 3:5',
+    cited: 'The giants are seen, and the giant that is seen is half beaten.',
+  },
+  {
+    sigil: 'ᛚ',
+    name: 'St. Rafay of the Address Bar',
+    epithet: 'Doubter of the Trusted Line',
+    mortal: 'Rafay Baloch, b. 1993',
+    feast: 'MMXIV',
+    feastNote: 'the year the guide was given, 2014',
+    patronOf: 'the browser, the spoofed origin, the one thing users are told to trust',
+    relic: 'Ethical Hacking and Penetration Testing Guide, 2014',
+    life:
+      'He broke the address bar — repeatedly, across Chrome, Safari, Firefox and Opera — which is a subtler crime than it sounds: the address bar is the single interface element every user is instructed to believe. To spoof it is to attack the last thing standing between a person and a convincing lie. He did it from Pakistan, published the method rather than the exploit, and became one of the loudest voices for security research in South Asia.',
+    cite: 'Compilation 2:4',
+    cited: 'The dependency thou hast not read, thou shalt not trust.',
+  },
+  {
+    sigil: 'ᛏ',
+    name: 'St. Keren of the Immune System',
+    epithet: 'Advocate of the Friendly Adversary',
+    mortal: 'Keren Elazari, b. 1982',
+    feast: 'MARCH · MMXIV',
+    feastNote: 'the month the immune system was named, TED 2014',
+    patronOf: 'disclosure, the hacker understood, the fever that saves the body',
+    relic: '“Hackers: the Internet’s immune system”, 2014',
+    life:
+      'She gave the field the metaphor it had been missing: that hackers are not the pathogen but the antibody — the friendly adversaries who force a system to evolve or die. It reframed an entire public argument, and it did so without softening what hackers actually do. Founder of BSidesTLV and a researcher at Tel Aviv University, she works the seam between hacker culture and policy, arguing that a society needs its hackers the way an organism needs a fever.',
+    cite: 'Enumeration 7:5',
+    cited: 'He that readeth the thing that bit him is bitten by it no more.',
+  },
+]
+
+export const SERPENT_ORDER = {
+  name: 'The Order of the Brazen Serpent',
+  charge:
+    'They that lift up the thing which bites, and set it upon a pole, that it may be read. The Church venerates the builders in the Fourteen; these are venerated for the opposite service — for proving the work false while there was still time to mend it.',
+  cite: 'Enumeration 7:3 · 7:5',
+}
 
 export const ANATHEMA: Anathema[] = [
   {
