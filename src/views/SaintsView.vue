@@ -205,7 +205,7 @@ const shownSerpent = computed(() => keep(SERPENT))
   margin: 0 0 1rem;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(23rem, 100%), 1fr));
   gap: 1.1rem;
 }
 

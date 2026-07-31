@@ -303,7 +303,7 @@ import { PREAMBLE, EXCOMMUNICANTS, CLOSING } from '../data/excommunicants'
 /* mitigation + road ------------------------------------------------------ */
 .ex__cols {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
   gap: 1.6rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--rule-faint);

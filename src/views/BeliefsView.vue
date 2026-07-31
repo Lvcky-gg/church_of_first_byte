@@ -296,7 +296,7 @@ const toggle = (ordinal: string) => {
 /* heresies --------------------------------------------------------------- */
 .heresies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
   gap: 1.1rem;
 }
 

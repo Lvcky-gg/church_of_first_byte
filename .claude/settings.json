@@ -32,7 +32,8 @@
       "Bash(node gate.mjs)",
       "Bash(node nav.mjs)",
       "Bash(node fit.mjs)",
-      "Bash(node ex.mjs)"
+      "Bash(node ex.mjs)",
+      "Bash(node saints2.mjs)"
     ],
     "additionalDirectories": [
       "/home/lvcky/church/The-Byteble"

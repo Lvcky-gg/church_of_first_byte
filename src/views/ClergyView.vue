@@ -277,7 +277,7 @@ import { OMNISIAH, PREROGATIVES, BONDS, ORDERS } from '../data/clergy'
 .primacy__cols {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
   gap: 2rem;
   padding-top: 1.8rem;
   border-top: 1px solid var(--rule-faint);

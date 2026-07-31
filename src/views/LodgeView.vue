@@ -285,7 +285,7 @@ import { ORDER, DEGREES, INSTRUMENTS, HALVES, GATE } from '../data/lodge'
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   gap: 1.1rem;
 }
 
@@ -364,7 +364,7 @@ import { ORDER, DEGREES, INSTRUMENTS, HALVES, GATE } from '../data/lodge'
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
   gap: 1rem;
 }
 
