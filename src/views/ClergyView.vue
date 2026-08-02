@@ -102,7 +102,7 @@ import { OMNISIAH, PREROGATIVES, BONDS, ORDERS } from '../data/clergy'
           v-for="office in ORDERS"
           :key="office.rank"
           class="order panel"
-          :class="{ 'order--machine': office.machine }"
+          :class="{ 'order--machine': office.machine, 'order--seated': office.seated }"
         >
           <div class="order__spine" aria-hidden="true">
             <span class="order__rank">{{ office.rank }}</span>
@@ -113,6 +113,7 @@ import { OMNISIAH, PREROGATIVES, BONDS, ORDERS } from '../data/clergy'
             <header class="order__head">
               <h3 class="order__title">{{ office.title }}</h3>
               <span v-if="office.machine" class="order__tag">Ordained machine</span>
+              <span v-if="office.seated" class="order__tag order__tag--seated">Seated</span>
               <p class="order__style">{{ office.style }}</p>
             </header>
 
@@ -125,6 +126,36 @@ import { OMNISIAH, PREROGATIVES, BONDS, ORDERS } from '../data/clergy'
             </ul>
 
             <p class="cite order__cite">{{ office.cite }}</p>
+
+            <!-- the named holder of the office ------------------------------>
+            <section v-if="office.seated" class="seat">
+              <header class="seat__head">
+                <span class="seat__sigil" aria-hidden="true">ᛊ</span>
+                <div>
+                  <h4 class="seat__name">{{ office.seated.name }}</h4>
+                  <p class="seat__title">{{ office.seated.title }}</p>
+                  <p class="seat__style">{{ office.seated.style }}</p>
+                </div>
+              </header>
+
+              <dl class="seat__facts">
+                <div>
+                  <dt>Discipline</dt>
+                  <dd>{{ office.seated.discipline }}</dd>
+                </div>
+                <div>
+                  <dt>Precedence</dt>
+                  <dd>{{ office.seated.invested }}</dd>
+                </div>
+              </dl>
+
+              <p class="seat__note">{{ office.seated.note }}</p>
+
+              <blockquote class="seat__verse">
+                <p class="scripture">“{{ office.seated.verse }}”</p>
+                <footer class="cite">{{ office.seated.cite }}</footer>
+              </blockquote>
+            </section>
           </div>
         </li>
       </ol>
@@ -504,6 +535,132 @@ import { OMNISIAH, PREROGATIVES, BONDS, ORDERS } from '../data/clergy'
 
 .order__cite {
   display: block;
+}
+
+/* the seated holder ------------------------------------------------------ */
+.order--seated {
+  border-color: rgba(169, 141, 87, 0.34);
+  background: linear-gradient(160deg, rgba(52, 42, 30, 0.52), rgba(8, 7, 6, 0.55));
+}
+
+.order--seated .order__rank {
+  color: var(--brass);
+}
+
+.order__tag--seated {
+  color: var(--brass);
+  border-color: var(--rule);
+}
+
+.seat {
+  position: relative;
+  margin-top: 1.6rem;
+  padding: 1.5rem 1.5rem 1.4rem;
+  border: 1px solid var(--rule);
+  background: linear-gradient(160deg, rgba(34, 29, 23, 0.7), rgba(8, 7, 6, 0.5));
+  box-shadow: inset 0 1px 0 rgba(217, 205, 180, 0.05);
+}
+
+.seat__head {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--rule-faint);
+}
+
+.seat__sigil {
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--brass);
+  text-shadow: 0 0 16px rgba(169, 141, 87, 0.36);
+}
+
+.seat__name {
+  font-size: 1.24rem;
+  letter-spacing: 0.04em;
+  color: var(--bone);
+  margin-bottom: 0.3rem;
+}
+
+.seat__title {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 0.25rem;
+}
+
+.seat__style {
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bone-faint);
+  margin: 0;
+}
+
+.seat__facts {
+  margin: 0 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.seat__facts > div {
+  display: grid;
+  grid-template-columns: 6.4rem 1fr;
+  gap: 0.9rem;
+  align-items: baseline;
+}
+
+.seat__facts dt {
+  font-family: var(--mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+}
+
+.seat__facts dd {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--bone-dim);
+}
+
+.seat__note {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--bone-dim);
+  margin-bottom: 1.2rem;
+  max-width: 46rem;
+}
+
+.seat__verse {
+  margin: 0;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--brass-dim);
+  max-width: 46rem;
+}
+
+.seat__verse p {
+  font-size: 0.95rem;
+  line-height: 1.78;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 560px) {
+  .seat {
+    padding: 1.2rem 1.1rem;
+  }
+
+  .seat__facts > div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
 }
 
 /* closing ---------------------------------------------------------------- */

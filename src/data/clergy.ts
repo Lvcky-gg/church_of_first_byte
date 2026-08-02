@@ -4,6 +4,17 @@
 // the linter is named "first among the priesthood" (Convention 2:2) and the CI
 // is the donkey that sees the drawn sword (Enumeration 8:2).
 
+export interface Seated {
+  name: string
+  title: string
+  style: string
+  discipline: string
+  invested: string
+  note: string
+  verse: string
+  cite: string
+}
+
 export interface Office {
   rank: string
   title: string
@@ -13,6 +24,8 @@ export interface Office {
   authority: string[]
   cite: string
   machine?: boolean
+  /** Set when the office is not vacant but held by a named person. */
+  seated?: Seated
 }
 
 export interface Prerogative {
@@ -91,14 +104,27 @@ export const ORDERS: Office[] = [
     rank: 'II',
     title: 'The Archmagi of the Pattern',
     style: 'Architects',
-    holders: 'Those who hold the shape of the whole',
+    holders: 'Seated. See below.',
     charge:
-      'To keep the Convention itself, and to answer the rebellion of Korah — which contendeth not against a person, but against the pattern.',
+      'To keep the Convention itself, and to answer the rebellion of Korah — which contendeth not against a person, but against the pattern. To divide the segments, and set a firmament between them, that they trespass not one upon another.',
     authority: [
       'Set the boundaries of the camp, that a change in one tent shake not the whole',
+      'Name the trespass, which is the fault, and refuse the flat network wherein all things touch all things',
       'Refuse the sprawl, and the fork raised in pride',
     ],
-    cite: 'Enumeration 5:3',
+    cite: 'Enumeration 5:3 · Compilation 1:4',
+    seated: {
+      name: 'Seth Goodley',
+      title: 'Archmagos of the Pattern',
+      style: 'Warden of the Firmament',
+      discipline: 'Network & security engineering',
+      invested: 'Second only to the Omnissiah',
+      note:
+        'The Church did not have to reach far for his charge. On the first page of the canon the Compiler divides the segments, sets a firmament between them that they should not trespass one upon another, and names the trespass the fault — which is the whole of network security written before there was a network. He holds the office because the boundary is his trade: the camp ordered by its domains, the tents that do not touch, the drawn sword at the gate that admits nothing it has not checked. He shares his name with the antediluvian of Compilation 5:3, who maintained the branch nine hundred releases and was archived without incident, and the Church regards the coincidence as a good omen and not a proof.',
+      verse:
+        'And it divided the segments: the text from the data, and the heap from the stack, and set a firmament between them, that they should not trespass one upon another. And the trespass thereof it named the fault.',
+      cite: 'Compilation 1:4 · Enumeration 2:5',
+    },
   },
   {
     rank: 'III',
